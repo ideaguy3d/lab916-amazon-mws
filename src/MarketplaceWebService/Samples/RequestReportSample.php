@@ -92,9 +92,7 @@ $service = new MarketplaceWebService_Client(
 // parameter to the RequestReportRequest object.
 $marketplaceIdArray = array("Id" => array('', ''));
 
-// @TODO: set request. Action can be passed as MarketplaceWebService_Model_ReportRequest
-// object or array of parameters
-
+// @TODO: set request. Action can be passed as MarketplaceWebService_Model_ReportRequest object or array of parameters
 $parameters = array(
     'Merchant' => MERCHANT_ID,
     // 'MarketplaceIdList' => $marketplaceIdArray,
@@ -111,7 +109,7 @@ $request->setReportOptions('ShowSalesChannel=true');
 invokeRequestReport($service, $request);
 
 /**
- * Get Report List Action Sample
+ * Get Report List Action Sample:
  * returns a list of reports; by default the most recent ten reports,
  * regardless of their acknowledgement status
  *
@@ -122,55 +120,55 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
     try {
         $response = $service->requestReport($request);
 
-        echo("Service Response\n");
-        echo("=============================================================================\n");
+        echo("<br>Service Response<br>\n");
+        echo("=============================================================================<br>\n");
 
-        echo("        RequestReportResponse\n");
+        echo("<br>        RequestReportResponse<br>\n");
         if ($response->isSetRequestReportResult()) {
             echo("            RequestReportResult\n");
             $requestReportResult = $response->getRequestReportResult();
 
             if ($requestReportResult->isSetReportRequestInfo()) {
-
                 $reportRequestInfo = $requestReportResult->getReportRequestInfo();
-                echo("                ReportRequestInfo\n");
+                echo("                ReportRequestInfo<br>\n");
                 if ($reportRequestInfo->isSetReportRequestId()) {
-                    echo("                    ReportRequestId\n");
-                    echo("                        " . $reportRequestInfo->getReportRequestId() . "\n");
+                    echo("                    ReportRequestId<br>\n");
+                    echo("                        " . $reportRequestInfo->getReportRequestId() . "<br>\n");
                 }
                 if ($reportRequestInfo->isSetReportType()) {
-                    echo("                    ReportType\n");
-                    echo("                        " . $reportRequestInfo->getReportType() . "\n");
+                    echo("                    ReportType<br>\n");
+                    echo("                        " . $reportRequestInfo->getReportType() . "<br>\n");
                 }
                 if ($reportRequestInfo->isSetStartDate()) {
-                    echo("                    StartDate\n");
-                    echo("                        " . $reportRequestInfo->getStartDate()->format(DATE_FORMAT) . "\n");
+                    echo("                    StartDate<br>\n");
+                    echo("                        " . $reportRequestInfo->getStartDate()->format(DATE_FORMAT) . "<br>\n");
                 }
                 if ($reportRequestInfo->isSetEndDate()) {
-                    echo("                    EndDate\n");
-                    echo("                        " . $reportRequestInfo->getEndDate()->format(DATE_FORMAT) . "\n");
+                    echo("                    EndDate<br>\n");
+                    echo("                        " . $reportRequestInfo->getEndDate()->format(DATE_FORMAT) . "<br>\n");
                 }
                 if ($reportRequestInfo->isSetSubmittedDate()) {
-                    echo("                    SubmittedDate\n");
-                    echo("                        " . $reportRequestInfo->getSubmittedDate()->format(DATE_FORMAT) . "\n");
+                    echo("                    SubmittedDate<br>\n");
+                    echo("                        " . $reportRequestInfo->getSubmittedDate()->format(DATE_FORMAT) . "<br>\n");
                 }
                 if ($reportRequestInfo->isSetReportProcessingStatus()) {
-                    echo("                    ReportProcessingStatus\n");
-                    echo("                        " . $reportRequestInfo->getReportProcessingStatus() . "\n");
+                    echo("                    ReportProcessingStatus<br>\n");
+                    echo("                        " . $reportRequestInfo->getReportProcessingStatus() . "<br>\n");
                 }
             }
         }
         if ($response->isSetResponseMetadata()) {
-            echo("            ResponseMetadata\n");
+            echo("<br>            ResponseMetadata<br>\n");
             $responseMetadata = $response->getResponseMetadata();
             if ($responseMetadata->isSetRequestId()) {
-                echo("                RequestId\n");
-                echo("                    " . $responseMetadata->getRequestId() . "\n");
+                echo("                RequestId<br>\n");
+                echo("                    " . $responseMetadata->getRequestId() . "<br>\n");
             }
         }
 
-        echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "\n");
-    } catch (MarketplaceWebService_Exception $ex) {
+        echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "<br>\n");
+    }
+    catch (MarketplaceWebService_Exception $ex) {
         echo("Caught Exception: " . $ex->getMessage() . "\n");
         echo("Response Status Code: " . $ex->getStatusCode() . "\n");
         echo("Error Code: " . $ex->getErrorCode() . "\n");

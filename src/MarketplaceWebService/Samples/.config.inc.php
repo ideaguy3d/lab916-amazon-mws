@@ -52,7 +52,7 @@ set_include_path(get_include_path() . PATH_SEPARATOR . '../../.');
  * and this function may need to be replaced with individual require_once statements
  * in case where other framework that define an __autoload already loaded.
  *
- * However, since this library follow common naming convention for PHP classes it
+ * However, since this library follows common naming conventions for PHP classes it
  * may be possible to simply re-use an autoload mechanism defined by other frameworks
  * (provided library is installed in the PHP include path), and so classes may just
  * be loaded even when this function is removed

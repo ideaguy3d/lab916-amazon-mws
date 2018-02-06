@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e9a796b-90ac-46ad-b1ef-eff833fb66fe" name="Default" comment="" />
+    <list default="true" id="3e9a796b-90ac-46ad-b1ef-eff833fb66fe" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/MarketplaceWebService/Client.php" afterPath="$PROJECT_DIR$/src/MarketplaceWebService/Client.php" />
+      <change beforePath="$PROJECT_DIR$/src/MarketplaceWebService/Samples/.config.inc.php" afterPath="$PROJECT_DIR$/src/MarketplaceWebService/Samples/.config.inc.php" />
+      <change beforePath="$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php" afterPath="$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,15 +14,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.19354838">
+    <splitter split-orientation="vertical" split-proportion="0.20537634">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5">
+        <splitter split-orientation="horizontal" split-proportion="0.35390675">
           <split-first>
-            <leaf>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="GetReportRequestListByNextTokenSample.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportRequestListByNextTokenSample.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="235">
+                    <state relative-caret-position="90">
                       <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
                       <folding>
                         <element signature="e#302#477#0#PHP" expanded="false" />
@@ -32,30 +36,11 @@
             </leaf>
           </split-first>
           <split-second>
-            <leaf>
-              <file leaf-file-name="GetReportSample.php" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportSample.php">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-36">
-                      <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-                      <folding>
-                        <element signature="e#295#467#0#PHP" expanded="false" />
-                        <element signature="e#469#498#0#PHP" expanded="false" />
-                        <element signature="e#534#830#0#PHP" expanded="false" />
-                        <element signature="e#982#999#0#PHP" expanded="false" />
-                        <element signature="e#1595#1943#0#PHP" expanded="false" />
-                        <element signature="e#2101#2579#0#PHP" expanded="false" />
-                        <element signature="e#2629#2868#0#PHP" expanded="false" />
-                        <element signature="e#3597#4008#0#PHP" expanded="false" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="GetReportListSample.php" pinned="false" current-in-tab="false">
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="GetReportListSample.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportListSample.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="182">
+                    <state relative-caret-position="90">
                       <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                       <folding>
                         <element signature="e#295#467#0#PHP" expanded="false" />
@@ -75,24 +60,56 @@
         </splitter>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.45171538">
+        <splitter split-orientation="horizontal" split-proportion="0.687459">
           <split-first>
-            <leaf>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="RequestReportSample.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="245">
-                      <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+                    <state relative-caret-position="-30">
+                      <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
                       <folding>
                         <element signature="e#295#467#0#PHP" expanded="false" />
                         <element signature="e#469#494#0#PHP" expanded="false" />
                         <element signature="e#530#826#0#PHP" expanded="false" />
                         <element signature="e#976#993#0#PHP" expanded="false" />
-                        <element signature="e#1589#1937#0#PHP" expanded="false" />
-                        <element signature="e#2095#2573#0#PHP" expanded="false" />
-                        <element signature="e#2620#2855#0#PHP" expanded="false" />
-                        <element signature="e#3667#4011#0#PHP" expanded="false" />
+                        <element signature="e#1590#1938#0#PHP" expanded="false" />
+                        <element signature="e#2096#2574#0#PHP" expanded="false" />
+                        <element signature="e#3189#3417#0#PHP" expanded="false" />
+                        <element signature="n#invokeRequestReport#0;n#!!top" expanded="false" />
                       </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="224">
+                      <caret line="240" column="24" lean-forward="true" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="24" />
+                      <folding>
+                        <element signature="e#295#467#0#PHP" expanded="false" />
+                        <element signature="e#1285#1564#0#PHP" expanded="false" />
+                        <element signature="e#1690#1984#0#PHP" expanded="false" />
+                        <element signature="e#3822#3920#0#PHP" expanded="false" />
+                        <element signature="n#escapeXML#0;n#MarketplaceWebService_Model#0;n#!!top" expanded="false" />
+                        <element signature="e#4132#4682#0#PHP" expanded="false" />
+                        <element signature="e#7382#7503#0#PHP" expanded="false" />
+                        <element signature="e#9751#9860#0#PHP" expanded="false" />
+                        <element signature="e#9995#10164#0#PHP" expanded="false" />
+                        <element signature="e#10306#10455#0#PHP" expanded="false" />
+                        <element signature="e#10552#10710#0#PHP" expanded="false" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="IdList.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model/IdList.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="-43">
+                      <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -100,116 +117,13 @@
             </leaf>
           </split-first>
           <split-second>
-            <leaf>
-              <file leaf-file-name="Client.php" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Client.php">
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="broken-index.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/broken-index.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="441">
-                      <caret line="441" column="6" lean-forward="false" selection-start-line="441" selection-start-column="6" selection-end-line="441" selection-end-column="6" />
-                      <folding>
-                        <element signature="e#295#470#0#PHP" expanded="false" />
-                        <element signature="e#472#519#0#PHP" expanded="false" />
-                        <element signature="e#680#858#0#PHP" expanded="false" />
-                        <element signature="e#1737#2393#0#PHP" expanded="false" />
-                        <element signature="e#2993#3245#0#PHP" expanded="false" />
-                        <element signature="e#3561#4212#0#PHP" expanded="false" />
-                        <element signature="n#constructUserAgentHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#5491#5617#0#PHP" expanded="false" />
-                        <element signature="e#5715#5897#0#PHP" expanded="false" />
-                        <element signature="n#quoteApplicationName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#6186#6375#0#PHP" expanded="false" />
-                        <element signature="n#quoteApplicationVersion#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#6668#6863#0#PHP" expanded="false" />
-                        <element signature="n#quoteAttributeName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#7151#7351#0#PHP" expanded="false" />
-                        <element signature="n#quoteAttributeValue#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#7957#8654#0#PHP" expanded="false" />
-                        <element signature="e#21069#21729#0#PHP" expanded="false" />
-                        <element signature="e#25288#25925#0#PHP" expanded="false" />
-                        <element signature="e#26735#27397#0#PHP" expanded="false" />
-                        <element signature="e#29556#30300#0#PHP" expanded="false" />
-                        <element signature="e#31136#31823#0#PHP" expanded="false" />
-                        <element signature="e#32603#33297#0#PHP" expanded="false" />
-                        <element signature="e#34049#34733#0#PHP" expanded="false" />
-                        <element signature="e#35492#36115#0#PHP" expanded="false" />
-                        <element signature="e#37127#37435#0#PHP" expanded="false" />
-                        <element signature="e#38059#38112#0#PHP" expanded="false" />
-                        <element signature="n#invoke#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#41480#41579#0#PHP" expanded="false" />
-                        <element signature="n#reportAnyErrors#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#42707#43058#0#PHP" expanded="false" />
-                        <element signature="n#performRequest#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="n#getParsedHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#45284#45649#0#PHP" expanded="false" />
-                        <element signature="n#verifyContentMd5#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#46250#46494#0#PHP" expanded="false" />
-                        <element signature="n#parseHttpHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#47127#47486#0#PHP" expanded="false" />
-                        <element signature="n#responseCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#48022#48252#0#PHP" expanded="false" />
-                        <element signature="n#headerCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#48410#48502#0#PHP" expanded="false" />
-                        <element signature="n#getDefaultCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#48924#49106#0#PHP" expanded="false" />
-                        <element signature="n#configureCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#51408#51642#0#PHP" expanded="false" />
-                        <element signature="n#getDownloadResponseDocument#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#52460#52550#0#PHP" expanded="false" />
-                        <element signature="n#pauseOnRetry#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#52683#52751#0#PHP" expanded="false" />
-                        <element signature="n#addRequiredParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#53401#53466#0#PHP" expanded="false" />
-                        <element signature="n#getParametersAsString#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#53757#55049#0#PHP" expanded="false" />
-                        <element signature="n#signParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#56030#56177#0#PHP" expanded="false" />
-                        <element signature="n#calculateStringToSignV2#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="n#urlencode#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#57097#57158#0#PHP" expanded="false" />
-                        <element signature="n#sign#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#57564#57644#0#PHP" expanded="false" />
-                        <element signature="n#getFormattedTimestamp#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#58139#58202#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#58931#59007#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReportScheduleCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#59949#60034#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReportRequestListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#60809#60891#0#PHP" expanded="false" />
-                        <element signature="n#convertUpdateReportAcknowledgements#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#61968#62032#0#PHP" expanded="false" />
-                        <element signature="n#convertSubmitFeed#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#63436#63504#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReportCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#64943#65029#0#PHP" expanded="false" />
-                        <element signature="n#convertGetFeedSubmissionListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#65807#65882#0#PHP" expanded="false" />
-                        <element signature="n#convertCancelFeedSubmissions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#67499#67566#0#PHP" expanded="false" />
-                        <element signature="n#convertRequestReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#69047#69123#0#PHP" expanded="false" />
-                        <element signature="n#convertGetFeedSubmissionCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#70786#70860#0#PHP" expanded="false" />
-                        <element signature="n#convertCancelReportRequests#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#72853#72920#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReportList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#74785#74862#0#PHP" expanded="false" />
-                        <element signature="n#convertGetFeedSubmissionResult#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#75643#75718#0#PHP" expanded="false" />
-                        <element signature="n#convertGetFeedSubmissionList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#77812#77886#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReportRequestList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#79993#80079#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReportScheduleListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#80857#80935#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReportListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#81697#81771#0#PHP" expanded="false" />
-                        <element signature="n#convertManageReportSchedule#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#82814#82889#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReportRequestCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                        <element signature="e#84570#84645#0#PHP" expanded="false" />
-                        <element signature="n#convertGetReportScheduleList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-                      </folding>
+                    <state relative-caret-position="182">
+                      <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="46" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -217,37 +131,147 @@
               <file leaf-file-name="RequestReportRequest.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model/RequestReportRequest.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="598">
-                      <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+                    <state relative-caret-position="390">
+                      <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
                       <folding>
                         <element signature="e#295#467#0#PHP" expanded="false" />
                         <element signature="e#469#512#0#PHP" expanded="false" />
-                        <element signature="e#992#1506#0#PHP" expanded="false" />
-                        <element signature="e#2339#2442#0#PHP" expanded="false" />
-                        <element signature="e#2552#2683#0#PHP" expanded="false" />
-                        <element signature="e#2823#3021#0#PHP" expanded="false" />
-                        <element signature="e#3140#3242#0#PHP" expanded="false" />
-                        <element signature="e#3364#3461#0#PHP" expanded="false" />
-                        <element signature="e#3565#3690#0#PHP" expanded="false" />
-                        <element signature="e#3824#4016#0#PHP" expanded="false" />
-                        <element signature="e#4129#4225#0#PHP" expanded="false" />
+                        <element signature="e#994#1508#0#PHP" expanded="false" />
+                        <element signature="e#2341#2444#0#PHP" expanded="false" />
+                        <element signature="e#2554#2685#0#PHP" expanded="false" />
+                        <element signature="e#2825#3023#0#PHP" expanded="false" />
+                        <element signature="e#3142#3244#0#PHP" expanded="false" />
+                        <element signature="e#3366#3463#0#PHP" expanded="false" />
+                        <element signature="e#3567#3692#0#PHP" expanded="false" />
+                        <element signature="e#3826#4018#0#PHP" expanded="false" />
+                        <element signature="e#4131#4227#0#PHP" expanded="false" />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name=".config.inc.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="Client.php" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Client.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="156">
+                      <caret line="22" column="72" lean-forward="false" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="72" />
+                      <folding>
+                        <element signature="e#295#470#0#PHP" expanded="false" />
+                        <element signature="e#472#519#0#PHP" expanded="false" />
+                        <element signature="e#757#935#0#PHP" expanded="false" />
+                        <element signature="e#1814#2470#0#PHP" expanded="false" />
+                        <element signature="e#3070#3322#0#PHP" expanded="false" />
+                        <element signature="e#3638#4289#0#PHP" expanded="false" />
+                        <element signature="n#constructUserAgentHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#5568#5694#0#PHP" expanded="false" />
+                        <element signature="e#5792#5974#0#PHP" expanded="false" />
+                        <element signature="n#quoteApplicationName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#6263#6452#0#PHP" expanded="false" />
+                        <element signature="n#quoteApplicationVersion#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#6745#6940#0#PHP" expanded="false" />
+                        <element signature="n#quoteAttributeName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#7228#7428#0#PHP" expanded="false" />
+                        <element signature="n#quoteAttributeValue#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#8034#8731#0#PHP" expanded="false" />
+                        <element signature="e#21146#21806#0#PHP" expanded="false" />
+                        <element signature="e#25365#26002#0#PHP" expanded="false" />
+                        <element signature="e#26812#27474#0#PHP" expanded="false" />
+                        <element signature="e#29633#30377#0#PHP" expanded="false" />
+                        <element signature="e#31213#31900#0#PHP" expanded="false" />
+                        <element signature="e#32680#33374#0#PHP" expanded="false" />
+                        <element signature="e#34126#34810#0#PHP" expanded="false" />
+                        <element signature="e#35569#36192#0#PHP" expanded="false" />
+                        <element signature="e#37204#37512#0#PHP" expanded="false" />
+                        <element signature="e#38136#38189#0#PHP" expanded="false" />
+                        <element signature="n#invoke#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#41557#41656#0#PHP" expanded="false" />
+                        <element signature="n#reportAnyErrors#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#42784#43135#0#PHP" expanded="false" />
+                        <element signature="n#performRequest#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="n#getParsedHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#45361#45726#0#PHP" expanded="false" />
+                        <element signature="n#verifyContentMd5#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#46327#46571#0#PHP" expanded="false" />
+                        <element signature="n#parseHttpHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#47204#47563#0#PHP" expanded="false" />
+                        <element signature="n#responseCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#48099#48329#0#PHP" expanded="false" />
+                        <element signature="n#headerCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#48487#48579#0#PHP" expanded="false" />
+                        <element signature="n#getDefaultCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#49001#49183#0#PHP" expanded="false" />
+                        <element signature="n#configureCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#51485#51719#0#PHP" expanded="false" />
+                        <element signature="n#getDownloadResponseDocument#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#52537#52627#0#PHP" expanded="false" />
+                        <element signature="n#pauseOnRetry#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#52760#52828#0#PHP" expanded="false" />
+                        <element signature="n#addRequiredParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#53478#53543#0#PHP" expanded="false" />
+                        <element signature="n#getParametersAsString#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#53834#55126#0#PHP" expanded="false" />
+                        <element signature="n#signParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#56107#56254#0#PHP" expanded="false" />
+                        <element signature="n#calculateStringToSignV2#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="n#urlencode#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#57174#57235#0#PHP" expanded="false" />
+                        <element signature="n#sign#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#57641#57721#0#PHP" expanded="false" />
+                        <element signature="n#getFormattedTimestamp#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#58216#58279#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#59008#59084#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReportScheduleCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#60026#60111#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReportRequestListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#60886#60968#0#PHP" expanded="false" />
+                        <element signature="n#convertUpdateReportAcknowledgements#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#62045#62109#0#PHP" expanded="false" />
+                        <element signature="n#convertSubmitFeed#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#63513#63581#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReportCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#65020#65106#0#PHP" expanded="false" />
+                        <element signature="n#convertGetFeedSubmissionListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#65884#65959#0#PHP" expanded="false" />
+                        <element signature="n#convertCancelFeedSubmissions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#67576#67643#0#PHP" expanded="false" />
+                        <element signature="n#convertRequestReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#69124#69200#0#PHP" expanded="false" />
+                        <element signature="n#convertGetFeedSubmissionCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#70863#70937#0#PHP" expanded="false" />
+                        <element signature="n#convertCancelReportRequests#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#72930#72997#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReportList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#74862#74939#0#PHP" expanded="false" />
+                        <element signature="n#convertGetFeedSubmissionResult#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#75720#75795#0#PHP" expanded="false" />
+                        <element signature="n#convertGetFeedSubmissionList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#77889#77963#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReportRequestList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#80070#80156#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReportScheduleListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#80934#81012#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReportListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#81774#81848#0#PHP" expanded="false" />
+                        <element signature="n#convertManageReportSchedule#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#82891#82966#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReportRequestCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                        <element signature="e#84647#84722#0#PHP" expanded="false" />
+                        <element signature="n#convertGetReportScheduleList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name=".config.inc.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/.config.inc.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="286">
-                      <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                    <state relative-caret-position="-78">
+                      <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                       <folding>
                         <element signature="e#49#617#0#PHP" expanded="false" />
                         <element signature="e#749#1048#0#PHP" expanded="false" />
                         <element signature="e#1131#1374#0#PHP" expanded="false" />
-                        <element signature="e#1415#1795#0#PHP" expanded="false" />
-                        <element signature="e#1864#2677#0#PHP" expanded="false" />
-                        <element signature="n#__autoload#0;n#!!top" expanded="false" />
                       </folding>
                     </state>
                   </provider>
@@ -259,6 +283,12 @@
       </split-second>
     </splitter>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -266,11 +296,11 @@
         <option value="$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportRequestListByNextTokenSample.php" />
         <option value="$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportListSample.php" />
         <option value="$PROJECT_DIR$/src/MarketplaceWebService/RequestType.php" />
-        <option value="$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php" />
         <option value="$PROJECT_DIR$/src/MarketplaceWebService/Model.php" />
         <option value="$PROJECT_DIR$/src/MarketplaceWebService/Model/RequestReportRequest.php" />
-        <option value="$PROJECT_DIR$/src/MarketplaceWebService/Client.php" />
         <option value="$PROJECT_DIR$/src/MarketplaceWebService/Samples/.config.inc.php" />
+        <option value="$PROJECT_DIR$/src/MarketplaceWebService/Client.php" />
+        <option value="$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php" />
       </list>
     </option>
   </component>
@@ -290,6 +320,9 @@
     <option name="width" value="1270" />
     <option name="height" value="847" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -305,6 +338,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,12 +358,17 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MarketplaceWebService" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="amazon-mws-reports-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amazon-mws-reports-api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MarketplaceWebService" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Samples" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,28 +410,31 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11054000" />
+    <option name="totallyTimeSpent" value="12081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18603411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1881663" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1609808" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18603411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -408,6 +451,246 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="99" column="38" lean-forward="false" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#494#0#PHP" expanded="false" />
+            <element signature="e#530#826#0#PHP" expanded="false" />
+            <element signature="e#976#993#0#PHP" expanded="false" />
+            <element signature="e#1590#1938#0#PHP" expanded="false" />
+            <element signature="e#2096#2574#0#PHP" expanded="false" />
+            <element signature="e#3189#3417#0#PHP" expanded="false" />
+            <element signature="n#invokeRequestReport#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#498#0#PHP" expanded="false" />
+            <element signature="e#534#830#0#PHP" expanded="false" />
+            <element signature="e#982#999#0#PHP" expanded="false" />
+            <element signature="e#1595#1943#0#PHP" expanded="false" />
+            <element signature="e#2101#2579#0#PHP" expanded="false" />
+            <element signature="e#2629#2868#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportRequestListByNextTokenSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding>
+            <element signature="e#302#477#0#PHP" expanded="false" />
+            <element signature="e#479#513#0#PHP" expanded="false" />
+            <element signature="e#1596#1947#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportListSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#503#0#PHP" expanded="false" />
+            <element signature="e#539#835#0#PHP" expanded="false" />
+            <element signature="e#1598#1946#0#PHP" expanded="false" />
+            <element signature="e#2104#2582#0#PHP" expanded="false" />
+            <element signature="e#2632#2876#0#PHP" expanded="false" />
+            <element signature="e#3813#4157#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4758">
+          <caret line="244" column="24" lean-forward="true" selection-start-line="244" selection-start-column="24" selection-end-line="244" selection-end-column="24" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#1285#1564#0#PHP" expanded="false" />
+            <element signature="e#1690#1984#0#PHP" expanded="false" />
+            <element signature="e#3822#3920#0#PHP" expanded="false" />
+            <element signature="n#escapeXML#0;n#MarketplaceWebService_Model#0;n#!!top" expanded="false" />
+            <element signature="e#4132#4682#0#PHP" expanded="false" />
+            <element signature="e#7382#7503#0#PHP" expanded="false" />
+            <element signature="e#9751#9860#0#PHP" expanded="false" />
+            <element signature="e#9995#10164#0#PHP" expanded="false" />
+            <element signature="e#10306#10455#0#PHP" expanded="false" />
+            <element signature="e#10552#10710#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model/IdList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/broken-index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7072">
+          <caret line="428" column="5" lean-forward="true" selection-start-line="428" selection-start-column="5" selection-end-line="428" selection-end-column="5" />
+          <folding>
+            <element signature="e#295#470#0#PHP" expanded="false" />
+            <element signature="e#472#519#0#PHP" expanded="false" />
+            <element signature="e#757#935#0#PHP" expanded="false" />
+            <element signature="e#1814#2470#0#PHP" expanded="false" />
+            <element signature="e#3070#3322#0#PHP" expanded="false" />
+            <element signature="e#3638#4289#0#PHP" expanded="false" />
+            <element signature="n#constructUserAgentHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#5568#5694#0#PHP" expanded="false" />
+            <element signature="e#5792#5974#0#PHP" expanded="false" />
+            <element signature="n#quoteApplicationName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#6263#6452#0#PHP" expanded="false" />
+            <element signature="n#quoteApplicationVersion#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#6745#6940#0#PHP" expanded="false" />
+            <element signature="n#quoteAttributeName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#7228#7428#0#PHP" expanded="false" />
+            <element signature="n#quoteAttributeValue#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#8034#8731#0#PHP" expanded="false" />
+            <element signature="e#21146#21806#0#PHP" expanded="false" />
+            <element signature="e#25365#26002#0#PHP" expanded="false" />
+            <element signature="e#26812#27474#0#PHP" expanded="false" />
+            <element signature="e#29633#30377#0#PHP" expanded="false" />
+            <element signature="e#31213#31900#0#PHP" expanded="false" />
+            <element signature="e#32680#33374#0#PHP" expanded="false" />
+            <element signature="e#34126#34810#0#PHP" expanded="false" />
+            <element signature="e#35569#36192#0#PHP" expanded="false" />
+            <element signature="e#37204#37512#0#PHP" expanded="false" />
+            <element signature="e#38136#38189#0#PHP" expanded="false" />
+            <element signature="n#invoke#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#41557#41656#0#PHP" expanded="false" />
+            <element signature="n#reportAnyErrors#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#42784#43135#0#PHP" expanded="false" />
+            <element signature="n#performRequest#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="n#getParsedHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#45361#45726#0#PHP" expanded="false" />
+            <element signature="n#verifyContentMd5#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#46327#46571#0#PHP" expanded="false" />
+            <element signature="n#parseHttpHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#47204#47563#0#PHP" expanded="false" />
+            <element signature="n#responseCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#48099#48329#0#PHP" expanded="false" />
+            <element signature="n#headerCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#48487#48579#0#PHP" expanded="false" />
+            <element signature="n#getDefaultCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#49001#49183#0#PHP" expanded="false" />
+            <element signature="n#configureCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#51485#51719#0#PHP" expanded="false" />
+            <element signature="n#getDownloadResponseDocument#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#52537#52627#0#PHP" expanded="false" />
+            <element signature="n#pauseOnRetry#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#52760#52828#0#PHP" expanded="false" />
+            <element signature="n#addRequiredParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#53478#53543#0#PHP" expanded="false" />
+            <element signature="n#getParametersAsString#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#53834#55126#0#PHP" expanded="false" />
+            <element signature="n#signParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#56107#56254#0#PHP" expanded="false" />
+            <element signature="n#calculateStringToSignV2#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="n#urlencode#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#57174#57235#0#PHP" expanded="false" />
+            <element signature="n#sign#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#57641#57721#0#PHP" expanded="false" />
+            <element signature="n#getFormattedTimestamp#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#58216#58279#0#PHP" expanded="false" />
+            <element signature="n#convertGetReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#59008#59084#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#60026#60111#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#60886#60968#0#PHP" expanded="false" />
+            <element signature="n#convertUpdateReportAcknowledgements#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#62045#62109#0#PHP" expanded="false" />
+            <element signature="n#convertSubmitFeed#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#63513#63581#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#65020#65106#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#65884#65959#0#PHP" expanded="false" />
+            <element signature="n#convertCancelFeedSubmissions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#67576#67643#0#PHP" expanded="false" />
+            <element signature="n#convertRequestReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#69124#69200#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#70863#70937#0#PHP" expanded="false" />
+            <element signature="n#convertCancelReportRequests#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#72930#72997#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#74862#74939#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionResult#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#75720#75795#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#77889#77963#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#80070#80156#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#80934#81012#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#81774#81848#0#PHP" expanded="false" />
+            <element signature="n#convertManageReportSchedule#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#82891#82966#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#84647#84722#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/.config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#49#617#0#PHP" expanded="false" />
+            <element signature="e#749#1048#0#PHP" expanded="false" />
+            <element signature="e#1131#1374#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model/RequestReportRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#512#0#PHP" expanded="false" />
+            <element signature="e#994#1508#0#PHP" expanded="false" />
+            <element signature="e#2341#2444#0#PHP" expanded="false" />
+            <element signature="e#2554#2685#0#PHP" expanded="false" />
+            <element signature="e#2825#3023#0#PHP" expanded="false" />
+            <element signature="e#3142#3244#0#PHP" expanded="false" />
+            <element signature="e#3366#3463#0#PHP" expanded="false" />
+            <element signature="e#3567#3692#0#PHP" expanded="false" />
+            <element signature="e#3826#4018#0#PHP" expanded="false" />
+            <element signature="e#4131#4227#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Interface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-156">
@@ -444,6 +727,524 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#498#0#PHP" expanded="false" />
+            <element signature="e#534#830#0#PHP" expanded="false" />
+            <element signature="e#982#999#0#PHP" expanded="false" />
+            <element signature="e#1595#1943#0#PHP" expanded="false" />
+            <element signature="e#2101#2579#0#PHP" expanded="false" />
+            <element signature="e#2629#2868#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#1285#1564#0#PHP" expanded="false" />
+            <element signature="e#1690#1984#0#PHP" expanded="false" />
+            <element signature="e#3822#3920#0#PHP" expanded="false" />
+            <element signature="n#escapeXML#0;n#MarketplaceWebService_Model#0;n#!!top" expanded="false" />
+            <element signature="e#4132#4682#0#PHP" expanded="false" />
+            <element signature="e#7382#7503#0#PHP" expanded="false" />
+            <element signature="e#9751#9860#0#PHP" expanded="false" />
+            <element signature="e#9995#10164#0#PHP" expanded="false" />
+            <element signature="e#10306#10455#0#PHP" expanded="false" />
+            <element signature="e#10552#10710#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model/RequestReportRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#512#0#PHP" expanded="false" />
+            <element signature="e#994#1508#0#PHP" expanded="false" />
+            <element signature="e#2341#2444#0#PHP" expanded="false" />
+            <element signature="e#2554#2685#0#PHP" expanded="false" />
+            <element signature="e#2825#3023#0#PHP" expanded="false" />
+            <element signature="e#3142#3244#0#PHP" expanded="false" />
+            <element signature="e#3366#3463#0#PHP" expanded="false" />
+            <element signature="e#3567#3692#0#PHP" expanded="false" />
+            <element signature="e#3826#4018#0#PHP" expanded="false" />
+            <element signature="e#4131#4227#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="441" column="6" lean-forward="false" selection-start-line="441" selection-start-column="6" selection-end-line="441" selection-end-column="6" />
+          <folding>
+            <element signature="e#295#470#0#PHP" expanded="false" />
+            <element signature="e#472#519#0#PHP" expanded="false" />
+            <element signature="e#757#935#0#PHP" expanded="false" />
+            <element signature="e#1814#2470#0#PHP" expanded="false" />
+            <element signature="e#3070#3322#0#PHP" expanded="false" />
+            <element signature="e#3638#4289#0#PHP" expanded="false" />
+            <element signature="n#constructUserAgentHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#5568#5694#0#PHP" expanded="false" />
+            <element signature="e#5792#5974#0#PHP" expanded="false" />
+            <element signature="n#quoteApplicationName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#6263#6452#0#PHP" expanded="false" />
+            <element signature="n#quoteApplicationVersion#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#6745#6940#0#PHP" expanded="false" />
+            <element signature="n#quoteAttributeName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#7228#7428#0#PHP" expanded="false" />
+            <element signature="n#quoteAttributeValue#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#8034#8731#0#PHP" expanded="false" />
+            <element signature="e#21146#21806#0#PHP" expanded="false" />
+            <element signature="e#25365#26002#0#PHP" expanded="false" />
+            <element signature="e#26812#27474#0#PHP" expanded="false" />
+            <element signature="e#29633#30377#0#PHP" expanded="false" />
+            <element signature="e#31213#31900#0#PHP" expanded="false" />
+            <element signature="e#32680#33374#0#PHP" expanded="false" />
+            <element signature="e#34126#34810#0#PHP" expanded="false" />
+            <element signature="e#35569#36192#0#PHP" expanded="false" />
+            <element signature="e#37204#37512#0#PHP" expanded="false" />
+            <element signature="e#38136#38189#0#PHP" expanded="false" />
+            <element signature="n#invoke#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#41557#41656#0#PHP" expanded="false" />
+            <element signature="n#reportAnyErrors#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#42784#43135#0#PHP" expanded="false" />
+            <element signature="n#performRequest#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="n#getParsedHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#45361#45726#0#PHP" expanded="false" />
+            <element signature="n#verifyContentMd5#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#46327#46571#0#PHP" expanded="false" />
+            <element signature="n#parseHttpHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#47204#47563#0#PHP" expanded="false" />
+            <element signature="n#responseCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#48099#48329#0#PHP" expanded="false" />
+            <element signature="n#headerCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#48487#48579#0#PHP" expanded="false" />
+            <element signature="n#getDefaultCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#49001#49183#0#PHP" expanded="false" />
+            <element signature="n#configureCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#51485#51719#0#PHP" expanded="false" />
+            <element signature="n#getDownloadResponseDocument#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#52537#52627#0#PHP" expanded="false" />
+            <element signature="n#pauseOnRetry#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#52760#52828#0#PHP" expanded="false" />
+            <element signature="n#addRequiredParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#53478#53543#0#PHP" expanded="false" />
+            <element signature="n#getParametersAsString#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#53834#55126#0#PHP" expanded="false" />
+            <element signature="n#signParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#56107#56254#0#PHP" expanded="false" />
+            <element signature="n#calculateStringToSignV2#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="n#urlencode#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#57174#57235#0#PHP" expanded="false" />
+            <element signature="n#sign#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#57641#57721#0#PHP" expanded="false" />
+            <element signature="n#getFormattedTimestamp#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#58216#58279#0#PHP" expanded="false" />
+            <element signature="n#convertGetReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#59008#59084#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#60026#60111#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#60886#60968#0#PHP" expanded="false" />
+            <element signature="n#convertUpdateReportAcknowledgements#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#62045#62109#0#PHP" expanded="false" />
+            <element signature="n#convertSubmitFeed#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#63513#63581#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#65020#65106#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#65884#65959#0#PHP" expanded="false" />
+            <element signature="n#convertCancelFeedSubmissions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#67576#67643#0#PHP" expanded="false" />
+            <element signature="n#convertRequestReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#69124#69200#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#70863#70937#0#PHP" expanded="false" />
+            <element signature="n#convertCancelReportRequests#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#72930#72997#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#74862#74939#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionResult#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#75720#75795#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#77889#77963#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#80070#80156#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#80934#81012#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#81774#81848#0#PHP" expanded="false" />
+            <element signature="n#convertManageReportSchedule#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#82891#82966#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#84647#84722#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#494#0#PHP" expanded="false" />
+            <element signature="e#530#826#0#PHP" expanded="false" />
+            <element signature="e#976#993#0#PHP" expanded="false" />
+            <element signature="e#1590#1938#0#PHP" expanded="false" />
+            <element signature="e#2096#2574#0#PHP" expanded="false" />
+            <element signature="e#3189#3417#0#PHP" expanded="false" />
+            <element signature="n#invokeRequestReport#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/RequestType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NOTICE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/.config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#49#617#0#PHP" expanded="false" />
+            <element signature="e#749#1048#0#PHP" expanded="false" />
+            <element signature="e#1131#1374#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Interface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportListSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#503#0#PHP" expanded="false" />
+            <element signature="e#539#835#0#PHP" expanded="false" />
+            <element signature="e#1598#1946#0#PHP" expanded="false" />
+            <element signature="e#2104#2582#0#PHP" expanded="false" />
+            <element signature="e#2632#2876#0#PHP" expanded="false" />
+            <element signature="e#3813#4157#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RequestReport.php" />
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/RequestType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1352">
+          <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/broken-index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model/RequestReportRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#512#0#PHP" expanded="false" />
+            <element signature="e#994#1508#0#PHP" expanded="false" />
+            <element signature="e#2341#2444#0#PHP" expanded="false" />
+            <element signature="e#2554#2685#0#PHP" expanded="false" />
+            <element signature="e#2825#3023#0#PHP" expanded="false" />
+            <element signature="e#3142#3244#0#PHP" expanded="false" />
+            <element signature="e#3366#3463#0#PHP" expanded="false" />
+            <element signature="e#3567#3692#0#PHP" expanded="false" />
+            <element signature="e#3826#4018#0#PHP" expanded="false" />
+            <element signature="e#4131#4227#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding>
+            <element signature="e#295#470#0#PHP" expanded="false" />
+            <element signature="e#472#519#0#PHP" expanded="false" />
+            <element signature="e#757#935#0#PHP" expanded="false" />
+            <element signature="e#1814#2470#0#PHP" expanded="false" />
+            <element signature="e#3070#3322#0#PHP" expanded="false" />
+            <element signature="e#3638#4289#0#PHP" expanded="false" />
+            <element signature="n#constructUserAgentHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#5568#5694#0#PHP" expanded="false" />
+            <element signature="e#5792#5974#0#PHP" expanded="false" />
+            <element signature="n#quoteApplicationName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#6263#6452#0#PHP" expanded="false" />
+            <element signature="n#quoteApplicationVersion#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#6745#6940#0#PHP" expanded="false" />
+            <element signature="n#quoteAttributeName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#7228#7428#0#PHP" expanded="false" />
+            <element signature="n#quoteAttributeValue#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#8034#8731#0#PHP" expanded="false" />
+            <element signature="e#21146#21806#0#PHP" expanded="false" />
+            <element signature="e#25365#26002#0#PHP" expanded="false" />
+            <element signature="e#26812#27474#0#PHP" expanded="false" />
+            <element signature="e#29633#30377#0#PHP" expanded="false" />
+            <element signature="e#31213#31900#0#PHP" expanded="false" />
+            <element signature="e#32680#33374#0#PHP" expanded="false" />
+            <element signature="e#34126#34810#0#PHP" expanded="false" />
+            <element signature="e#35569#36192#0#PHP" expanded="false" />
+            <element signature="e#37204#37512#0#PHP" expanded="false" />
+            <element signature="e#38136#38189#0#PHP" expanded="false" />
+            <element signature="n#invoke#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#41557#41656#0#PHP" expanded="false" />
+            <element signature="n#reportAnyErrors#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#42784#43135#0#PHP" expanded="false" />
+            <element signature="n#performRequest#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="n#getParsedHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#45361#45726#0#PHP" expanded="false" />
+            <element signature="n#verifyContentMd5#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#46327#46571#0#PHP" expanded="false" />
+            <element signature="n#parseHttpHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#47204#47563#0#PHP" expanded="false" />
+            <element signature="n#responseCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#48099#48329#0#PHP" expanded="false" />
+            <element signature="n#headerCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#48487#48579#0#PHP" expanded="false" />
+            <element signature="n#getDefaultCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#49001#49183#0#PHP" expanded="false" />
+            <element signature="n#configureCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#51485#51719#0#PHP" expanded="false" />
+            <element signature="n#getDownloadResponseDocument#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#52537#52627#0#PHP" expanded="false" />
+            <element signature="n#pauseOnRetry#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#52760#52828#0#PHP" expanded="false" />
+            <element signature="n#addRequiredParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#53478#53543#0#PHP" expanded="false" />
+            <element signature="n#getParametersAsString#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#53834#55126#0#PHP" expanded="false" />
+            <element signature="n#signParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#56107#56254#0#PHP" expanded="false" />
+            <element signature="n#calculateStringToSignV2#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="n#urlencode#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#57174#57235#0#PHP" expanded="false" />
+            <element signature="n#sign#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#57641#57721#0#PHP" expanded="false" />
+            <element signature="n#getFormattedTimestamp#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#58216#58279#0#PHP" expanded="false" />
+            <element signature="n#convertGetReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#59008#59084#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#60026#60111#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#60886#60968#0#PHP" expanded="false" />
+            <element signature="n#convertUpdateReportAcknowledgements#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#62045#62109#0#PHP" expanded="false" />
+            <element signature="n#convertSubmitFeed#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#63513#63581#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#65020#65106#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#65884#65959#0#PHP" expanded="false" />
+            <element signature="n#convertCancelFeedSubmissions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#67576#67643#0#PHP" expanded="false" />
+            <element signature="n#convertRequestReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#69124#69200#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#70863#70937#0#PHP" expanded="false" />
+            <element signature="n#convertCancelReportRequests#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#72930#72997#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#74862#74939#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionResult#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#75720#75795#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#77889#77963#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#80070#80156#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#80934#81012#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#81774#81848#0#PHP" expanded="false" />
+            <element signature="n#convertManageReportSchedule#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#82891#82966#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#84647#84722#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model/IdList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/.config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding>
+            <element signature="e#49#617#0#PHP" expanded="false" />
+            <element signature="e#749#1048#0#PHP" expanded="false" />
+            <element signature="e#1131#1374#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="85" column="3" lean-forward="true" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#498#0#PHP" expanded="false" />
+            <element signature="e#534#830#0#PHP" expanded="false" />
+            <element signature="e#982#999#0#PHP" expanded="false" />
+            <element signature="e#1595#1943#0#PHP" expanded="false" />
+            <element signature="e#2101#2579#0#PHP" expanded="false" />
+            <element signature="e#2629#2868#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="240" column="24" lean-forward="true" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="24" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#1285#1564#0#PHP" expanded="false" />
+            <element signature="e#1690#1984#0#PHP" expanded="false" />
+            <element signature="e#3822#3920#0#PHP" expanded="false" />
+            <element signature="n#escapeXML#0;n#MarketplaceWebService_Model#0;n#!!top" expanded="false" />
+            <element signature="e#4132#4682#0#PHP" expanded="false" />
+            <element signature="e#7382#7503#0#PHP" expanded="false" />
+            <element signature="e#9751#9860#0#PHP" expanded="false" />
+            <element signature="e#9995#10164#0#PHP" expanded="false" />
+            <element signature="e#10306#10455#0#PHP" expanded="false" />
+            <element signature="e#10552#10710#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportRequestListByNextTokenSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding>
+            <element signature="e#302#477#0#PHP" expanded="false" />
+            <element signature="e#479#513#0#PHP" expanded="false" />
+            <element signature="e#1596#1947#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="168" column="13" lean-forward="true" selection-start-line="168" selection-start-column="13" selection-end-line="168" selection-end-column="13" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#494#0#PHP" expanded="false" />
+            <element signature="e#530#826#0#PHP" expanded="false" />
+            <element signature="e#976#993#0#PHP" expanded="false" />
+            <element signature="e#1590#1938#0#PHP" expanded="false" />
+            <element signature="e#2096#2574#0#PHP" expanded="false" />
+            <element signature="e#3189#3417#0#PHP" expanded="false" />
+            <element signature="n#invokeRequestReport#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Interface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportListSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#503#0#PHP" expanded="false" />
+            <element signature="e#539#835#0#PHP" expanded="false" />
+            <element signature="e#1598#1946#0#PHP" expanded="false" />
+            <element signature="e#2104#2582#0#PHP" expanded="false" />
+            <element signature="e#2632#2876#0#PHP" expanded="false" />
+            <element signature="e#3813#4157#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/GetReportRequestListByNextTokenSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding>
+            <element signature="e#302#477#0#PHP" expanded="false" />
+            <element signature="e#479#513#0#PHP" expanded="false" />
+            <element signature="e#1596#1947#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/RequestType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -464,180 +1265,186 @@
             <element signature="e#1595#1943#0#PHP" expanded="false" />
             <element signature="e#2101#2579#0#PHP" expanded="false" />
             <element signature="e#2629#2868#0#PHP" expanded="false" />
-            <element signature="e#3597#4008#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        <state relative-caret-position="224">
+          <caret line="240" column="24" lean-forward="true" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="24" />
           <folding>
-            <element signature="e#302#477#0#PHP" expanded="false" />
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#1285#1564#0#PHP" expanded="false" />
+            <element signature="e#1690#1984#0#PHP" expanded="false" />
+            <element signature="e#3822#3920#0#PHP" expanded="false" />
+            <element signature="n#escapeXML#0;n#MarketplaceWebService_Model#0;n#!!top" expanded="false" />
+            <element signature="e#4132#4682#0#PHP" expanded="false" />
+            <element signature="e#7382#7503#0#PHP" expanded="false" />
+            <element signature="e#9751#9860#0#PHP" expanded="false" />
+            <element signature="e#9995#10164#0#PHP" expanded="false" />
+            <element signature="e#10306#10455#0#PHP" expanded="false" />
+            <element signature="e#10552#10710#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Model/RequestReportRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding>
             <element signature="e#295#467#0#PHP" expanded="false" />
             <element signature="e#469#512#0#PHP" expanded="false" />
-            <element signature="e#992#1506#0#PHP" expanded="false" />
-            <element signature="e#2339#2442#0#PHP" expanded="false" />
-            <element signature="e#2552#2683#0#PHP" expanded="false" />
-            <element signature="e#2823#3021#0#PHP" expanded="false" />
-            <element signature="e#3140#3242#0#PHP" expanded="false" />
-            <element signature="e#3364#3461#0#PHP" expanded="false" />
-            <element signature="e#3565#3690#0#PHP" expanded="false" />
-            <element signature="e#3824#4016#0#PHP" expanded="false" />
-            <element signature="e#4129#4225#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="e#295#467#0#PHP" expanded="false" />
-            <element signature="e#469#494#0#PHP" expanded="false" />
-            <element signature="e#530#826#0#PHP" expanded="false" />
-            <element signature="e#976#993#0#PHP" expanded="false" />
-            <element signature="e#1589#1937#0#PHP" expanded="false" />
-            <element signature="e#2095#2573#0#PHP" expanded="false" />
-            <element signature="e#2620#2855#0#PHP" expanded="false" />
-            <element signature="e#3667#4011#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="441" column="6" lean-forward="false" selection-start-line="441" selection-start-column="6" selection-end-line="441" selection-end-column="6" />
-          <folding>
-            <element signature="e#295#470#0#PHP" expanded="false" />
-            <element signature="e#472#519#0#PHP" expanded="false" />
-            <element signature="e#680#858#0#PHP" expanded="false" />
-            <element signature="e#1737#2393#0#PHP" expanded="false" />
-            <element signature="e#2993#3245#0#PHP" expanded="false" />
-            <element signature="e#3561#4212#0#PHP" expanded="false" />
-            <element signature="n#constructUserAgentHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#5491#5617#0#PHP" expanded="false" />
-            <element signature="e#5715#5897#0#PHP" expanded="false" />
-            <element signature="n#quoteApplicationName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#6186#6375#0#PHP" expanded="false" />
-            <element signature="n#quoteApplicationVersion#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#6668#6863#0#PHP" expanded="false" />
-            <element signature="n#quoteAttributeName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#7151#7351#0#PHP" expanded="false" />
-            <element signature="n#quoteAttributeValue#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#7957#8654#0#PHP" expanded="false" />
-            <element signature="e#21069#21729#0#PHP" expanded="false" />
-            <element signature="e#25288#25925#0#PHP" expanded="false" />
-            <element signature="e#26735#27397#0#PHP" expanded="false" />
-            <element signature="e#29556#30300#0#PHP" expanded="false" />
-            <element signature="e#31136#31823#0#PHP" expanded="false" />
-            <element signature="e#32603#33297#0#PHP" expanded="false" />
-            <element signature="e#34049#34733#0#PHP" expanded="false" />
-            <element signature="e#35492#36115#0#PHP" expanded="false" />
-            <element signature="e#37127#37435#0#PHP" expanded="false" />
-            <element signature="e#38059#38112#0#PHP" expanded="false" />
-            <element signature="n#invoke#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#41480#41579#0#PHP" expanded="false" />
-            <element signature="n#reportAnyErrors#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#42707#43058#0#PHP" expanded="false" />
-            <element signature="n#performRequest#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="n#getParsedHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#45284#45649#0#PHP" expanded="false" />
-            <element signature="n#verifyContentMd5#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#46250#46494#0#PHP" expanded="false" />
-            <element signature="n#parseHttpHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#47127#47486#0#PHP" expanded="false" />
-            <element signature="n#responseCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#48022#48252#0#PHP" expanded="false" />
-            <element signature="n#headerCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#48410#48502#0#PHP" expanded="false" />
-            <element signature="n#getDefaultCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#48924#49106#0#PHP" expanded="false" />
-            <element signature="n#configureCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#51408#51642#0#PHP" expanded="false" />
-            <element signature="n#getDownloadResponseDocument#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#52460#52550#0#PHP" expanded="false" />
-            <element signature="n#pauseOnRetry#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#52683#52751#0#PHP" expanded="false" />
-            <element signature="n#addRequiredParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#53401#53466#0#PHP" expanded="false" />
-            <element signature="n#getParametersAsString#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#53757#55049#0#PHP" expanded="false" />
-            <element signature="n#signParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#56030#56177#0#PHP" expanded="false" />
-            <element signature="n#calculateStringToSignV2#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="n#urlencode#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#57097#57158#0#PHP" expanded="false" />
-            <element signature="n#sign#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#57564#57644#0#PHP" expanded="false" />
-            <element signature="n#getFormattedTimestamp#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#58139#58202#0#PHP" expanded="false" />
-            <element signature="n#convertGetReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#58931#59007#0#PHP" expanded="false" />
-            <element signature="n#convertGetReportScheduleCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#59949#60034#0#PHP" expanded="false" />
-            <element signature="n#convertGetReportRequestListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#60809#60891#0#PHP" expanded="false" />
-            <element signature="n#convertUpdateReportAcknowledgements#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#61968#62032#0#PHP" expanded="false" />
-            <element signature="n#convertSubmitFeed#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#63436#63504#0#PHP" expanded="false" />
-            <element signature="n#convertGetReportCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#64943#65029#0#PHP" expanded="false" />
-            <element signature="n#convertGetFeedSubmissionListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#65807#65882#0#PHP" expanded="false" />
-            <element signature="n#convertCancelFeedSubmissions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#67499#67566#0#PHP" expanded="false" />
-            <element signature="n#convertRequestReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#69047#69123#0#PHP" expanded="false" />
-            <element signature="n#convertGetFeedSubmissionCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#70786#70860#0#PHP" expanded="false" />
-            <element signature="n#convertCancelReportRequests#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#72853#72920#0#PHP" expanded="false" />
-            <element signature="n#convertGetReportList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#74785#74862#0#PHP" expanded="false" />
-            <element signature="n#convertGetFeedSubmissionResult#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#75643#75718#0#PHP" expanded="false" />
-            <element signature="n#convertGetFeedSubmissionList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#77812#77886#0#PHP" expanded="false" />
-            <element signature="n#convertGetReportRequestList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#79993#80079#0#PHP" expanded="false" />
-            <element signature="n#convertGetReportScheduleListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#80857#80935#0#PHP" expanded="false" />
-            <element signature="n#convertGetReportListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#81697#81771#0#PHP" expanded="false" />
-            <element signature="n#convertManageReportSchedule#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#82814#82889#0#PHP" expanded="false" />
-            <element signature="n#convertGetReportRequestCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
-            <element signature="e#84570#84645#0#PHP" expanded="false" />
-            <element signature="n#convertGetReportScheduleList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#994#1508#0#PHP" expanded="false" />
+            <element signature="e#2341#2444#0#PHP" expanded="false" />
+            <element signature="e#2554#2685#0#PHP" expanded="false" />
+            <element signature="e#2825#3023#0#PHP" expanded="false" />
+            <element signature="e#3142#3244#0#PHP" expanded="false" />
+            <element signature="e#3366#3463#0#PHP" expanded="false" />
+            <element signature="e#3567#3692#0#PHP" expanded="false" />
+            <element signature="e#3826#4018#0#PHP" expanded="false" />
+            <element signature="e#4131#4227#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/.config.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="-78">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#49#617#0#PHP" expanded="false" />
             <element signature="e#749#1048#0#PHP" expanded="false" />
             <element signature="e#1131#1374#0#PHP" expanded="false" />
-            <element signature="e#1415#1795#0#PHP" expanded="false" />
-            <element signature="e#1864#2677#0#PHP" expanded="false" />
-            <element signature="n#__autoload#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="22" column="72" lean-forward="false" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="72" />
+          <folding>
+            <element signature="e#295#470#0#PHP" expanded="false" />
+            <element signature="e#472#519#0#PHP" expanded="false" />
+            <element signature="e#757#935#0#PHP" expanded="false" />
+            <element signature="e#1814#2470#0#PHP" expanded="false" />
+            <element signature="e#3070#3322#0#PHP" expanded="false" />
+            <element signature="e#3638#4289#0#PHP" expanded="false" />
+            <element signature="n#constructUserAgentHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#5568#5694#0#PHP" expanded="false" />
+            <element signature="e#5792#5974#0#PHP" expanded="false" />
+            <element signature="n#quoteApplicationName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#6263#6452#0#PHP" expanded="false" />
+            <element signature="n#quoteApplicationVersion#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#6745#6940#0#PHP" expanded="false" />
+            <element signature="n#quoteAttributeName#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#7228#7428#0#PHP" expanded="false" />
+            <element signature="n#quoteAttributeValue#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#8034#8731#0#PHP" expanded="false" />
+            <element signature="e#21146#21806#0#PHP" expanded="false" />
+            <element signature="e#25365#26002#0#PHP" expanded="false" />
+            <element signature="e#26812#27474#0#PHP" expanded="false" />
+            <element signature="e#29633#30377#0#PHP" expanded="false" />
+            <element signature="e#31213#31900#0#PHP" expanded="false" />
+            <element signature="e#32680#33374#0#PHP" expanded="false" />
+            <element signature="e#34126#34810#0#PHP" expanded="false" />
+            <element signature="e#35569#36192#0#PHP" expanded="false" />
+            <element signature="e#37204#37512#0#PHP" expanded="false" />
+            <element signature="e#38136#38189#0#PHP" expanded="false" />
+            <element signature="n#invoke#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#41557#41656#0#PHP" expanded="false" />
+            <element signature="n#reportAnyErrors#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#42784#43135#0#PHP" expanded="false" />
+            <element signature="n#performRequest#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="n#getParsedHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#45361#45726#0#PHP" expanded="false" />
+            <element signature="n#verifyContentMd5#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#46327#46571#0#PHP" expanded="false" />
+            <element signature="n#parseHttpHeader#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#47204#47563#0#PHP" expanded="false" />
+            <element signature="n#responseCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#48099#48329#0#PHP" expanded="false" />
+            <element signature="n#headerCallback#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#48487#48579#0#PHP" expanded="false" />
+            <element signature="n#getDefaultCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#49001#49183#0#PHP" expanded="false" />
+            <element signature="n#configureCurlOptions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#51485#51719#0#PHP" expanded="false" />
+            <element signature="n#getDownloadResponseDocument#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#52537#52627#0#PHP" expanded="false" />
+            <element signature="n#pauseOnRetry#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#52760#52828#0#PHP" expanded="false" />
+            <element signature="n#addRequiredParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#53478#53543#0#PHP" expanded="false" />
+            <element signature="n#getParametersAsString#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#53834#55126#0#PHP" expanded="false" />
+            <element signature="n#signParameters#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#56107#56254#0#PHP" expanded="false" />
+            <element signature="n#calculateStringToSignV2#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="n#urlencode#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#57174#57235#0#PHP" expanded="false" />
+            <element signature="n#sign#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#57641#57721#0#PHP" expanded="false" />
+            <element signature="n#getFormattedTimestamp#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#58216#58279#0#PHP" expanded="false" />
+            <element signature="n#convertGetReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#59008#59084#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#60026#60111#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#60886#60968#0#PHP" expanded="false" />
+            <element signature="n#convertUpdateReportAcknowledgements#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#62045#62109#0#PHP" expanded="false" />
+            <element signature="n#convertSubmitFeed#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#63513#63581#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#65020#65106#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#65884#65959#0#PHP" expanded="false" />
+            <element signature="n#convertCancelFeedSubmissions#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#67576#67643#0#PHP" expanded="false" />
+            <element signature="n#convertRequestReport#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#69124#69200#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#70863#70937#0#PHP" expanded="false" />
+            <element signature="n#convertCancelReportRequests#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#72930#72997#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#74862#74939#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionResult#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#75720#75795#0#PHP" expanded="false" />
+            <element signature="n#convertGetFeedSubmissionList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#77889#77963#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#80070#80156#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#80934#81012#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportListByNextToken#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#81774#81848#0#PHP" expanded="false" />
+            <element signature="n#convertManageReportSchedule#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#82891#82966#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportRequestCount#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+            <element signature="e#84647#84722#0#PHP" expanded="false" />
+            <element signature="n#convertGetReportScheduleList#0;n#MarketplaceWebService_Client#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceWebService/Samples/RequestReportSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <element signature="e#295#467#0#PHP" expanded="false" />
+            <element signature="e#469#494#0#PHP" expanded="false" />
+            <element signature="e#530#826#0#PHP" expanded="false" />
+            <element signature="e#976#993#0#PHP" expanded="false" />
+            <element signature="e#1590#1938#0#PHP" expanded="false" />
+            <element signature="e#2096#2574#0#PHP" expanded="false" />
+            <element signature="e#3189#3417#0#PHP" expanded="false" />
+            <element signature="n#invokeRequestReport#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -20,7 +20,7 @@
  * @see MarketplaceWebService_Interface
  */
 
-echo "In the client.php file <br>";
+echo "<h1>Lab 916 Amazon MWS API</h1> <p>In the client.php file</p> <br>";
 
 require_once('Interface.php');
 require_once('RequestType.php');
