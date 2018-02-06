@@ -51,5 +51,3 @@ final class RequestType
         return $requestType;
     }
 }
-
-?>

@@ -18,7 +18,7 @@
 /**
  * @see MarketplaceWebService_Model
  */
-require_once('../Model.php');
+//require_once('../Model.php');
 
 /**
  * MarketplaceWebService_Model_RequestReportRequest

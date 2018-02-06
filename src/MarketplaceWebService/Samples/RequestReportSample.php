@@ -54,7 +54,7 @@ $config = array(
     'ServiceURL' => $serviceUrl,
     'ProxyHost' => null,
     'ProxyPort' => -1,
-    'MaxErrorRetry' => 3,
+    'MaxErrorRetry' => 10,
 );
 
 /************************************************************************
@@ -81,7 +81,7 @@ $service = new MarketplaceWebService_Client(
  * XML files available under MarketplaceWebService/Mock tree
  *
  ***********************************************************************/
-$service = new MarketplaceWebService_Mock();
+// $service = new MarketplaceWebService_Mock();
 
 /************************************************************************
  * Setup request parameters and uncomment invoke to try out
@@ -90,17 +90,17 @@ $service = new MarketplaceWebService_Mock();
 
 // Constructing the MarketplaceId array which will be passed in as the the MarketplaceIdList
 // parameter to the RequestReportRequest object.
-$marketplaceIdArray = array("Id" => array('<Marketplace_Id_1>', '<Marketplace_Id_2>'));
+$marketplaceIdArray = array("Id" => array('', ''));
 
 // @TODO: set request. Action can be passed as MarketplaceWebService_Model_ReportRequest
 // object or array of parameters
 
 $parameters = array(
     'Merchant' => MERCHANT_ID,
-    'MarketplaceIdList' => $marketplaceIdArray,
+    // 'MarketplaceIdList' => $marketplaceIdArray,
     'ReportType' => '_GET_MERCHANT_LISTINGS_DATA_',
     'ReportOptions' => 'ShowSalesChannel=true',
-    'MWSAuthToken' => '<MWS Auth Token>', // Optional
+    'MWSAuthToken' => '', // Optional
 );
 
 $request = new MarketplaceWebService_Model_RequestReportRequest($parameters);

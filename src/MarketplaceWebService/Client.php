@@ -19,6 +19,9 @@
 /**
  * @see MarketplaceWebService_Interface
  */
+
+echo "In the client.php file <br>";
+
 require_once('Interface.php');
 require_once('RequestType.php');
 

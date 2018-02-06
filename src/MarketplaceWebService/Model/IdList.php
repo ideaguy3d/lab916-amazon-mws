@@ -19,7 +19,8 @@
 /**
  *  @see MarketplaceWebService_Model
  */
-require_once ('MarketplaceWebService/Model.php');  
+// relative to the client.php file
+require_once ('../Model.php');
 
     
 
@@ -35,8 +36,6 @@ require_once ('MarketplaceWebService/Model.php');
  */ 
 class MarketplaceWebService_Model_IdList extends MarketplaceWebService_Model
 {
-
-
     /**
      * Construct new MarketplaceWebService_Model_IdList
      * 

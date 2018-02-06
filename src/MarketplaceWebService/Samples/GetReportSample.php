@@ -89,21 +89,17 @@ $service = new MarketplaceWebService_Client(
  ***********************************************************************/
 // @TODO: set request. Action can be passed as MarketplaceWebService_Model_GetReportRequest
 // object or array of parameters
-// $reportId = '<Your Report Id>';
+$reportId = '<Your Report Id>';
 
-// $parameters = array (
-//   'Merchant' => MERCHANT_ID,
-//   'Report' => @fopen('php://memory', 'rw+'),
-//   'ReportId' => $reportId,
-//   'MWSAuthToken' => '<MWS Auth Token>', // Optional
-// );
-// $request = new MarketplaceWebService_Model_GetReportRequest($parameters);
+$parameters = array(
+    'Merchant' => MERCHANT_ID,
+    'Report' => @fopen('php://memory', 'rw+'),
+    'ReportId' => $reportId,
+    'MWSAuthToken' => '', // Optional
+);
 
-//$request = new MarketplaceWebService_Model_GetReportRequest();
-//$request->setMerchant(MERCHANT_ID);
-//$request->setReport(@fopen('php://memory', 'rw+'));
-//$request->setReportId($reportId);
-//$request->setMWSAuthToken('<MWS Auth Token>'); // Optional
+$request = new MarketplaceWebService_Model_GetReportRequest($parameters);
+
 
 invokeGetReport($service, $request);
 
