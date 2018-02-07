@@ -21,7 +21,7 @@
 
 include_once('.config.inc.php');
 
-echo "<h2>RequestReport API operation:</h2>";
+echo "<h2>RequestReport operation:</h2><hr>";
 
 /************************************************************************
  * Uncomment to configure the client instance. Configuration settings
@@ -74,18 +74,6 @@ $service = new MarketplaceWebService_Client(
     APPLICATION_VERSION);
 
 /************************************************************************
- * Uncomment to try out Mock Service that simulates MarketplaceWebService
- * responses without calling MarketplaceWebService service.
- *
- * Responses are loaded from local XML files. You can tweak XML files to
- * experiment with various outputs during development
- *
- * XML files available under MarketplaceWebService/Mock tree
- *
- ***********************************************************************/
-// $service = new MarketplaceWebService_Mock();
-
-/************************************************************************
  * Setup request parameters and uncomment invoke to try out
  * sample for Report Action
  ***********************************************************************/
@@ -100,7 +88,7 @@ $parameters = array(
     // 'MarketplaceIdList' => $marketplaceIdArray,
     'ReportType' => '_GET_XML_ALL_ORDERS_DATA_BY_ORDER_DATE_',
     'ReportOptions' => 'ShowSalesChannel=true',
-    'MWSAuthToken' => '', // Optional
+    // 'MWSAuthToken' => '', // Optional
 );
 
 $requestReportListParameters = array(
@@ -108,7 +96,7 @@ $requestReportListParameters = array(
 );
 
 $request = new MarketplaceWebService_Model_RequestReportRequest($parameters);
-$reportRequestListModel = new MarketplaceWebService_Model_GetReportRequestListRequest($requestReportListParameters);
+$getReportRequestListModel = new MarketplaceWebService_Model_GetReportRequestListRequest($requestReportListParameters);
 
 //-- Using ReportOptions:
 $request->setReportOptions('ShowSalesChannel=true');
@@ -187,86 +175,25 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
     }
 }
 
-function invokeGetReportRequestList(MarketplaceWebService_Interface $service, $requestReportRequestListModel) {
+function invokeGetReportRequestList(MarketplaceWebService_Interface $service, $getReportRequestListModel) {
     try {
-        $response = $service->getReportRequestList($requestReportRequestListModel);
+        $response = $service->getReportRequestList($getReportRequestListModel);
 
         echo("Service Response<br>");
         echo("=============================================================================<br>");
 
         echo("        GetReportRequestListResponse<br>");
-        if ($response->isSetGetReportRequestListResult()) {
-            echo("            GetReportRequestListResult<br>");
-            $getReportRequestListResult = $response->getGetReportRequestListResult();
-
-            if ($getReportRequestListResult->isSetNextToken()) {
-                echo("                NextToken<br>");
-                echo " ~ " . $getReportRequestListResult->getNextToken() . "<br>";
-            }
-
-            if ($getReportRequestListResult->isSetHasNext()) {
-                echo("                HasNext<br>");
-                echo " ~ " . $getReportRequestListResult . getHasNext() . "<br>";
-            }
-
-            $reportRequestInfoList = $getReportRequestListResult->getReportRequestInfoList();
-
-            foreach ($reportRequestInfoList as $reportRequestInfo) {
-                echo("                ReportRequestInfo<br>");
-                if ($reportRequestInfo->isSetReportRequestId()) {
-                    echo("                    ReportRequestId<br>");
-                    echo("                        " . $reportRequestInfo->getReportRequestId() . "<br>");
-                }
-                if ($reportRequestInfo->isSetReportType()) {
-                    echo("                    ReportType<br>");
-                    echo("                        " . $reportRequestInfo->getReportType() . "<br>");
-                }
-                if ($reportRequestInfo->isSetStartDate()) {
-                    echo("                    StartDate<br>");
-                    echo("                        " . $reportRequestInfo->getStartDate()->format(DATE_FORMAT) . "<br>");
-                }
-                if ($reportRequestInfo->isSetEndDate()) {
-                    echo("                    EndDate<br>");
-                    echo("                        " . $reportRequestInfo->getEndDate()->format(DATE_FORMAT) . "<br>");
-                }
-                // add start
-                if ($reportRequestInfo->isSetScheduled()) {
-                    echo("                    Scheduled<br>");
-                    echo("                        " . $reportRequestInfo->getScheduled() . "<br>");
-                }
-                // add end
-                if ($reportRequestInfo->isSetSubmittedDate()) {
-                    echo("                    SubmittedDate<br>");
-                    echo("                        " . $reportRequestInfo->getSubmittedDate()->format(DATE_FORMAT) . "<br>");
-                }
-                if ($reportRequestInfo->isSetReportProcessingStatus()) {
-                    echo("                    ReportProcessingStatus<br>");
-                    echo("                        " . $reportRequestInfo->getReportProcessingStatus() . "<br>");
-                }
-                // add start
-                if ($reportRequestInfo->isSetGeneratedReportId()) {
-                    echo("                    GeneratedReportId<br>");
-                    echo("                        " . $reportRequestInfo->getGeneratedReportId() . "<br>");
-                }
-                if ($reportRequestInfo->isSetStartedProcessingDate()) {
-                    echo("                    StartedProcessingDate<br>");
-                    echo("                        " . $reportRequestInfo->getStartedProcessingDate()->format(DATE_FORMAT) . "<br>");
-                }
-                if ($reportRequestInfo->isSetCompletedDate()) {
-                    echo("                    CompletedDate<br>");
-                    echo("                        " . $reportRequestInfo->getCompletedDate()->format(DATE_FORMAT) . "<br>");
-                }// add end
-            }
-        }
-
-        if ($response->isSetResponseMetadata()) {
+        if($response->isSetGetReportRequestListResult()) {
 
         }
-    } catch (MarketplaceWebService_Exception $ex) {
+    }
+    catch (MarketplaceWebService_Exception $ex) {
 
     }
 }
 
-
+function invokeGetReprtList(MarketplaceWebService_Interface $service, $requestReportListModel) {
+    // build something
+}
 
 // end of PHP file

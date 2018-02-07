@@ -21,7 +21,7 @@
 
 include_once('.config.inc.php');
 
-echo "<h2>GetReport operation</h2>";
+echo "<h2>GetReport operation</h2><hr>";
 
 /************************************************************************
  * Uncomment to configure the client instance. Configuration settings

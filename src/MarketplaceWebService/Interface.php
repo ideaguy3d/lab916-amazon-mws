@@ -15,16 +15,13 @@
  *  Generated: Thu May 07 13:07:36 PDT 2009
  * 
  */
+
 /**
  * The Amazon Marketplace Web Service contain APIs for inventory and order management.
- * 
- */
+ **/
 
 interface  MarketplaceWebService_Interface 
 {
-    
-
-            
     /**
      * Get Report 
      * The GetReport operation returns the contents of a report. Reports can potentially be
@@ -41,8 +38,6 @@ interface  MarketplaceWebService_Interface
      */
     public function getReport($request);
 
-
-            
     /**
      * Get Report Schedule Count 
      * returns the number of report schedules
@@ -57,8 +52,6 @@ interface  MarketplaceWebService_Interface
      */
     public function getReportScheduleCount($request);
 
-
-            
     /**
      * Get Report Request List By Next Token 
      * retrieve the next batch of list items and if there are more items to retrieve
@@ -73,8 +66,6 @@ interface  MarketplaceWebService_Interface
      */
     public function getReportRequestListByNextToken($request);
 
-
-            
     /**
      * Update Report Acknowledgements 
      * The UpdateReportAcknowledgements operation updates the acknowledged status of one or more reports.
@@ -89,8 +80,6 @@ interface  MarketplaceWebService_Interface
      */
     public function updateReportAcknowledgements($request);
 
-
-            
     /**
      * Submit Feed 
      * Uploads a file for processing together with the necessary
@@ -108,8 +97,6 @@ interface  MarketplaceWebService_Interface
      * @throws MarketplaceWebService_Exception
      */
     public function submitFeed($request);
-
-
             
     /**
      * Get Report Count 
@@ -127,8 +114,6 @@ interface  MarketplaceWebService_Interface
      */
     public function getReportCount($request);
 
-
-            
     /**
      * Get Feed Submission List By Next Token 
      * retrieve the next batch of list items and if there are more items to retrieve
@@ -142,8 +127,6 @@ interface  MarketplaceWebService_Interface
      * @throws MarketplaceWebService_Exception
      */
     public function getFeedSubmissionListByNextToken($request);
-
-
             
     /**
      * Cancel Feed Submissions 
@@ -159,8 +142,6 @@ interface  MarketplaceWebService_Interface
      * @throws MarketplaceWebService_Exception
      */
     public function cancelFeedSubmissions($request);
-
-
             
     /**
      * Request Report 
@@ -175,8 +156,6 @@ interface  MarketplaceWebService_Interface
      * @throws MarketplaceWebService_Exception
      */
     public function requestReport($request);
-
-
             
     /**
      * Get Feed Submission Count 
@@ -192,8 +171,6 @@ interface  MarketplaceWebService_Interface
      */
     public function getFeedSubmissionCount($request);
 
-
-            
     /**
      * Cancel Report Requests 
      * cancels report requests that have not yet started processing,
@@ -209,8 +186,6 @@ interface  MarketplaceWebService_Interface
      */
     public function cancelReportRequests($request);
 
-
-            
     /**
      * Get Report List 
      * returns a list of reports; by default the most recent ten reports,
@@ -226,8 +201,6 @@ interface  MarketplaceWebService_Interface
      */
     public function getReportList($request);
 
-
-            
     /**
      * Get Feed Submission Result 
      * retrieves the feed processing report
@@ -241,8 +214,6 @@ interface  MarketplaceWebService_Interface
      * @throws MarketplaceWebService_Exception
      */
     public function getFeedSubmissionResult($request);
-
-
             
     /**
      * Get Feed Submission List 
@@ -257,8 +228,6 @@ interface  MarketplaceWebService_Interface
      * @throws MarketplaceWebService_Exception
      */
     public function getFeedSubmissionList($request);
-
-
             
     /**
      * Get Report Request List 
@@ -274,8 +243,6 @@ interface  MarketplaceWebService_Interface
      */
     public function getReportRequestList($request);
 
-
-            
     /**
      * Get Report Schedule List By Next Token 
      * retrieve the next batch of list items and if there are more items to retrieve
@@ -290,8 +257,6 @@ interface  MarketplaceWebService_Interface
      */
     public function getReportScheduleListByNextToken($request);
 
-
-            
     /**
      * Get Report List By Next Token 
      * retrieve the next batch of list items and if there are more items to retrieve
@@ -306,8 +271,6 @@ interface  MarketplaceWebService_Interface
      */
     public function getReportListByNextToken($request);
 
-
-            
     /**
      * Manage Report Schedule 
      * Creates, updates, or deletes a report schedule
