@@ -207,7 +207,6 @@ abstract class MarketplaceWebService_Model
     private function fromAssociativeArray(array $array) {
         foreach ($this->fields as $fieldName => $field) {
             $fieldType = $field['FieldType'];
-            echo "fieldType = $fieldType <br>";
             if (is_array($fieldType)) {
                 if ($this->isComplexType($fieldType[0])) {
                     if (array_key_exists($fieldName, $array)) {
@@ -239,7 +238,6 @@ abstract class MarketplaceWebService_Model
                 if ($this->isComplexType($fieldType)) {
                     if (array_key_exists($fieldName, $array)) {
                         require_once(str_replace('_', DIRECTORY_SEPARATOR, $fieldType) . ".php");
-                        //require_once ("Model/IdList.php");
                         $this->fields[$fieldName]['FieldValue'] = new $fieldType($array[$fieldName]);
                     }
                 } else {

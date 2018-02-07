@@ -101,12 +101,17 @@ $parameters = array(
     'MWSAuthToken' => '', // Optional
 );
 
-$request = new MarketplaceWebService_Model_RequestReportRequest($parameters);
+$requestReportListParameters = array(
+    'Merchant' => MERCHANT_ID,
+);
 
-// Using ReportOptions
+$request = new MarketplaceWebService_Model_RequestReportRequest($parameters);
+$reportRequestListModel = new MarketplaceWebService_Model_GetReportRequestListRequest($requestReportListParameters);
+
+//-- Using ReportOptions:
 $request->setReportOptions('ShowSalesChannel=true');
 
-invokeRequestReport($service, $request);
+//invokeRequestReport($service, $request);
 
 /**
  * Get Report List Action Sample:
@@ -124,6 +129,7 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
         echo("=============================================================================<br>\n");
 
         echo("<br>        RequestReportResponse<br>\n");
+
         if ($response->isSetRequestReportResult()) {
             echo("            RequestReportResult\n");
             $requestReportResult = $response->getRequestReportResult();
@@ -157,6 +163,7 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
                 }
             }
         }
+
         if ($response->isSetResponseMetadata()) {
             echo("<br>            ResponseMetadata<br>\n");
             $responseMetadata = $response->getResponseMetadata();
@@ -169,16 +176,95 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
         echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "<br>\n");
     }
     catch (MarketplaceWebService_Exception $ex) {
-        echo("Caught Exception: " . $ex->getMessage() . "\n");
-        echo("Response Status Code: " . $ex->getStatusCode() . "\n");
-        echo("Error Code: " . $ex->getErrorCode() . "\n");
-        echo("Error Type: " . $ex->getErrorType() . "\n");
-        echo("Request ID: " . $ex->getRequestId() . "\n");
-        echo("XML: " . $ex->getXML() . "\n");
+        echo("Caught Exception: " . $ex->getMessage() . "<br>\n");
+        echo("Response Status Code: " . $ex->getStatusCode() . "<br>\n");
+        echo("Error Code: " . $ex->getErrorCode() . "<br>\n");
+        echo("Error Type: " . $ex->getErrorType() . "<br>\n");
+        echo("Request ID: " . $ex->getRequestId() . "<br>\n");
+        echo("XML: " . $ex->getXML() . "<br>\n");
         echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "\n");
     }
 }
 
+function invokeGetReportRequestList(MarketplaceWebService_Interface $service, $requestReportRequestListModel) {
+    try {
+        $response = $service->getReportRequestList($requestReportRequestListModel);
 
+        echo("Service Response<br>");
+        echo("=============================================================================<br>");
 
-                                                                                
+        echo("        GetReportRequestListResponse<br>");
+        if($response->isSetGetReportRequestListResult()) {
+            echo("            GetReportRequestListResult<br>");
+            $getReportRequestListResult = $response->getGetReportRequestListResult();
+
+            if($getReportRequestListResult->isSetNextToken()) {
+                echo("                NextToken<br>");
+                echo " ~ " . $getReportRequestListResult->getNextToken() . "<br>";
+            }
+
+            if($getReportRequestListResult->isSetHasNext()) {
+                echo("                HasNext<br>");
+                echo " ~ " . $getReportRequestListResult.getHasNext() . "<br>";
+            }
+
+            $reportRequestInfoList = $getReportRequestListResult->getReportRequestInfoList();
+
+            foreach($reportRequestInfoList as $reportRequestInfo) {
+                echo("                ReportRequestInfo<br>");
+                if ($reportRequestInfo->isSetReportRequestId()) {
+                    echo("                    ReportRequestId<br>");
+                    echo("                        " . $reportRequestInfo->getReportRequestId() . "<br>");
+                }
+                if ($reportRequestInfo->isSetReportType()) {
+                    echo("                    ReportType<br>");
+                    echo("                        " . $reportRequestInfo->getReportType() . "<br>");
+                }
+                if ($reportRequestInfo->isSetStartDate()) {
+                    echo("                    StartDate<br>");
+                    echo("                        " . $reportRequestInfo->getStartDate()->format(DATE_FORMAT) . "<br>");
+                }
+                if ($reportRequestInfo->isSetEndDate()) {
+                    echo("                    EndDate<br>");
+                    echo("                        " . $reportRequestInfo->getEndDate()->format(DATE_FORMAT) . "<br>");
+                }
+                // add start
+                if ($reportRequestInfo->isSetScheduled()) {
+                    echo("                    Scheduled<br>");
+                    echo("                        " . $reportRequestInfo->getScheduled() . "<br>");
+                }
+                // add end
+                if ($reportRequestInfo->isSetSubmittedDate()) {
+                    echo("                    SubmittedDate<br>");
+                    echo("                        " . $reportRequestInfo->getSubmittedDate()->format(DATE_FORMAT) . "<br>");
+                }
+                if ($reportRequestInfo->isSetReportProcessingStatus()) {
+                    echo("                    ReportProcessingStatus<br>");
+                    echo("                        " . $reportRequestInfo->getReportProcessingStatus() . "<br>");
+                }
+                // add start
+                if ($reportRequestInfo->isSetGeneratedReportId()) {
+                    echo("                    GeneratedReportId<br>");
+                    echo("                        " . $reportRequestInfo->getGeneratedReportId() . "<br>");
+                }
+                if ($reportRequestInfo->isSetStartedProcessingDate()) {
+                    echo("                    StartedProcessingDate<br>");
+                    echo("                        " . $reportRequestInfo->getStartedProcessingDate()->format(DATE_FORMAT) . "<br>");
+                }
+                if ($reportRequestInfo->isSetCompletedDate()) {
+                    echo("                    CompletedDate<br>");
+                    echo("                        " . $reportRequestInfo->getCompletedDate()->format(DATE_FORMAT) . "<br>");
+                }// add end
+            }
+        }
+
+        if($response->isSetResponseMetadata()) {
+
+        }
+    }
+    catch (MarketplaceWebService_Exception $ex) {
+
+    }
+}
+
+// end of PHP file

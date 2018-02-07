@@ -1,34 +1,31 @@
 <?php
-/** 
+/**
  *  PHP Version 5
  *
- *  @category    Amazon
- *  @package     MarketplaceWebService
- *  @copyright   Copyright 2009 Amazon Technologies, Inc.
- *  @link        http://aws.amazon.com
- *  @license     http://aws.amazon.com/apache2.0  Apache License, Version 2.0
- *  @version     2009-01-01
+ * @category    Amazon
+ * @package     MarketplaceWebService
+ * @copyright   Copyright 2009 Amazon Technologies, Inc.
+ * @link        http://aws.amazon.com
+ * @license     http://aws.amazon.com/apache2.0  Apache License, Version 2.0
+ * @version     2009-01-01
  */
-/******************************************************************************* 
-
+/*******************************************************************************
  *  Marketplace Web Service PHP5 Library
  *  Generated: Thu May 07 13:07:36 PDT 2009
- * 
+ *
  */
 
 /**
- *  @see MarketplaceWebService_Model
+ * @see MarketplaceWebService_Model
  */
-require_once ('MarketplaceWebService/Model.php');  
-
-    
+require_once('MarketplaceWebService/Model.php');
 
 /**
  * MarketplaceWebService_Model_GetReportRequestListRequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Marketplace: string</li>
  * <li>Merchant: string</li>
  * <li>ReportRequestIdList: MarketplaceWebService_Model_IdList</li>
@@ -39,19 +36,17 @@ require_once ('MarketplaceWebService/Model.php');
  * <li>RequestedToDate: string</li>
  *
  * </ul>
- */ 
+ */
 class MarketplaceWebService_Model_GetReportRequestListRequest extends MarketplaceWebService_Model
 {
-
-
     /**
      * Construct new MarketplaceWebService_Model_GetReportRequestListRequest
-     * 
-     * @param mixed $data DOMElement or Associative Array to construct from. 
-     * 
+     *
+     * @param mixed $data DOMElement or Associative Array to construct from.
+     *
      * Valid properties:
      * <ul>
-     * 
+     *
      * <li>Marketplace: string</li>
      * <li>Merchant: string</li>
      * <li>ReportRequestIdList: MarketplaceWebService_Model_IdList</li>
@@ -63,52 +58,48 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
      *
      * </ul>
      */
-    public function __construct($data = null)
-    {
-        $this->fields = array (
-        'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
-        'Merchant' => array('FieldValue' => null, 'FieldType' => 'string'),
-        'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-        'ReportRequestIdList' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebService_Model_IdList'),
-        'ReportTypeList' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebService_Model_TypeList'),
-        'ReportProcessingStatusList' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebService_Model_StatusList'),
-        'MaxCount' => array('FieldValue' => null, 'FieldType' => 'string'),
-        'RequestedFromDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
-        'RequestedToDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
+    public function __construct($data = null) {
+        $this->fields = array(
+            'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Merchant' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ReportRequestIdList' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebService_Model_IdList'),
+            'ReportTypeList' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebService_Model_TypeList'),
+            'ReportProcessingStatusList' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebService_Model_StatusList'),
+            'MaxCount' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'RequestedFromDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
+            'RequestedToDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
         );
         parent::__construct($data);
     }
 
-        /**
+    /**
      * Gets the value of the Marketplace property.
-     * 
+     *
      * @return string Marketplace
      */
-    public function getMarketplace() 
-    {
+    public function getMarketplace() {
         return $this->fields['Marketplace']['FieldValue'];
     }
 
     /**
      * Sets the value of the Marketplace property.
-     * 
+     *
      * @param string Marketplace
      * @return this instance
      */
-    public function setMarketplace($value) 
-    {
+    public function setMarketplace($value) {
         $this->fields['Marketplace']['FieldValue'] = $value;
         return $this;
     }
 
     /**
      * Sets the value of the Marketplace and returns this instance
-     * 
+     *
      * @param string $value Marketplace
      * @return MarketplaceWebService_Model_GetReportRequestListRequest instance
      */
-    public function withMarketplace($value)
-    {
+    public function withMarketplace($value) {
         $this->setMarketplace($value);
         return $this;
     }
@@ -116,44 +107,40 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
 
     /**
      * Checks if Marketplace is set
-     * 
+     *
      * @return bool true if Marketplace  is set
      */
-    public function isSetMarketplace()
-    {
+    public function isSetMarketplace() {
         return !is_null($this->fields['Marketplace']['FieldValue']);
     }
 
     /**
      * Gets the value of the Merchant property.
-     * 
+     *
      * @return string Merchant
      */
-    public function getMerchant() 
-    {
+    public function getMerchant() {
         return $this->fields['Merchant']['FieldValue'];
     }
 
     /**
      * Sets the value of the Merchant property.
-     * 
+     *
      * @param string Merchant
      * @return this instance
      */
-    public function setMerchant($value) 
-    {
+    public function setMerchant($value) {
         $this->fields['Merchant']['FieldValue'] = $value;
         return $this;
     }
 
     /**
      * Sets the value of the Merchant and returns this instance
-     * 
+     *
      * @param string $value Merchant
      * @return MarketplaceWebService_Model_GetReportRequestListRequest instance
      */
-    public function withMerchant($value)
-    {
+    public function withMerchant($value) {
         $this->setMerchant($value);
         return $this;
     }
@@ -161,11 +148,10 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
 
     /**
      * Checks if Merchant is set
-     * 
+     *
      * @return bool true if Merchant  is set
      */
-    public function isSetMerchant()
-    {
+    public function isSetMerchant() {
         return !is_null($this->fields['Merchant']['FieldValue']);
     }
 
@@ -174,8 +160,7 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
      *
      * @return string MWSAuthToken
      */
-    public function getMWSAuthToken()
-    {
+    public function getMWSAuthToken() {
         return $this->fields['MWSAuthToken']['FieldValue'];
     }
 
@@ -185,8 +170,7 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
      * @param string MWSAuthToken
      * @return this instance
      */
-    public function setMWSAuthToken($value)
-    {
+    public function setMWSAuthToken($value) {
         $this->fields['MWSAuthToken']['FieldValue'] = $value;
         return $this;
     }
@@ -197,8 +181,7 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
      * @param string $value MWSAuthToken
      * @return MarketplaceWebService_Model_GetReportRequestListRequest instance
      */
-    public function withMWSAuthToken($value)
-    {
+    public function withMWSAuthToken($value) {
         $this->setMWSAuthToken($value);
         return $this;
     }
@@ -209,41 +192,37 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
      *
      * @return bool true if MWSAuthToken  is set
      */
-    public function isSetMWSAuthToken()
-    {
+    public function isSetMWSAuthToken() {
         return !is_null($this->fields['MWSAuthToken']['FieldValue']);
     }
 
     /**
      * Gets the value of the ReportRequestIdList.
-     * 
+     *
      * @return IdList ReportRequestIdList
      */
-    public function getReportRequestIdList() 
-    {
+    public function getReportRequestIdList() {
         return $this->fields['ReportRequestIdList']['FieldValue'];
     }
 
     /**
      * Sets the value of the ReportRequestIdList.
-     * 
+     *
      * @param IdList ReportRequestIdList
      * @return void
      */
-    public function setReportRequestIdList($value) 
-    {
+    public function setReportRequestIdList($value) {
         $this->fields['ReportRequestIdList']['FieldValue'] = $value;
         return;
     }
 
     /**
      * Sets the value of the ReportRequestIdList  and returns this instance
-     * 
+     *
      * @param IdList $value ReportRequestIdList
      * @return MarketplaceWebService_Model_GetReportRequestListRequest instance
      */
-    public function withReportRequestIdList($value)
-    {
+    public function withReportRequestIdList($value) {
         $this->setReportRequestIdList($value);
         return $this;
     }
@@ -251,45 +230,41 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
 
     /**
      * Checks if ReportRequestIdList  is set
-     * 
+     *
      * @return bool true if ReportRequestIdList property is set
      */
-    public function isSetReportRequestIdList()
-    {
+    public function isSetReportRequestIdList() {
         return !is_null($this->fields['ReportRequestIdList']['FieldValue']);
 
     }
 
     /**
      * Gets the value of the ReportTypeList.
-     * 
+     *
      * @return TypeList ReportTypeList
      */
-    public function getReportTypeList() 
-    {
+    public function getReportTypeList() {
         return $this->fields['ReportTypeList']['FieldValue'];
     }
 
     /**
      * Sets the value of the ReportTypeList.
-     * 
+     *
      * @param TypeList ReportTypeList
      * @return void
      */
-    public function setReportTypeList($value) 
-    {
+    public function setReportTypeList($value) {
         $this->fields['ReportTypeList']['FieldValue'] = $value;
         return;
     }
 
     /**
      * Sets the value of the ReportTypeList  and returns this instance
-     * 
+     *
      * @param TypeList $value ReportTypeList
      * @return MarketplaceWebService_Model_GetReportRequestListRequest instance
      */
-    public function withReportTypeList($value)
-    {
+    public function withReportTypeList($value) {
         $this->setReportTypeList($value);
         return $this;
     }
@@ -297,45 +272,41 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
 
     /**
      * Checks if ReportTypeList  is set
-     * 
+     *
      * @return bool true if ReportTypeList property is set
      */
-    public function isSetReportTypeList()
-    {
+    public function isSetReportTypeList() {
         return !is_null($this->fields['ReportTypeList']['FieldValue']);
 
     }
 
     /**
      * Gets the value of the ReportProcessingStatusList.
-     * 
+     *
      * @return StatusList ReportProcessingStatusList
      */
-    public function getReportProcessingStatusList() 
-    {
+    public function getReportProcessingStatusList() {
         return $this->fields['ReportProcessingStatusList']['FieldValue'];
     }
 
     /**
      * Sets the value of the ReportProcessingStatusList.
-     * 
+     *
      * @param StatusList ReportProcessingStatusList
      * @return void
      */
-    public function setReportProcessingStatusList($value) 
-    {
+    public function setReportProcessingStatusList($value) {
         $this->fields['ReportProcessingStatusList']['FieldValue'] = $value;
         return;
     }
 
     /**
      * Sets the value of the ReportProcessingStatusList  and returns this instance
-     * 
+     *
      * @param StatusList $value ReportProcessingStatusList
      * @return MarketplaceWebService_Model_GetReportRequestListRequest instance
      */
-    public function withReportProcessingStatusList($value)
-    {
+    public function withReportProcessingStatusList($value) {
         $this->setReportProcessingStatusList($value);
         return $this;
     }
@@ -343,45 +314,41 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
 
     /**
      * Checks if ReportProcessingStatusList  is set
-     * 
+     *
      * @return bool true if ReportProcessingStatusList property is set
      */
-    public function isSetReportProcessingStatusList()
-    {
+    public function isSetReportProcessingStatusList() {
         return !is_null($this->fields['ReportProcessingStatusList']['FieldValue']);
 
     }
 
     /**
      * Gets the value of the MaxCount property.
-     * 
+     *
      * @return Count MaxCount
      */
-    public function getMaxCount() 
-    {
+    public function getMaxCount() {
         return $this->fields['MaxCount']['FieldValue'];
     }
 
     /**
      * Sets the value of the MaxCount property.
-     * 
+     *
      * @param Count MaxCount
      * @return this instance
      */
-    public function setMaxCount($value) 
-    {
+    public function setMaxCount($value) {
         $this->fields['MaxCount']['FieldValue'] = $value;
         return $this;
     }
 
     /**
      * Sets the value of the MaxCount and returns this instance
-     * 
+     *
      * @param Count $value MaxCount
      * @return MarketplaceWebService_Model_GetReportRequestListRequest instance
      */
-    public function withMaxCount($value)
-    {
+    public function withMaxCount($value) {
         $this->setMaxCount($value);
         return $this;
     }
@@ -389,44 +356,40 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
 
     /**
      * Checks if MaxCount is set
-     * 
+     *
      * @return bool true if MaxCount  is set
      */
-    public function isSetMaxCount()
-    {
+    public function isSetMaxCount() {
         return !is_null($this->fields['MaxCount']['FieldValue']);
     }
 
     /**
      * Gets the value of the RequestedFromDate property.
-     * 
+     *
      * @return string RequestedFromDate
      */
-    public function getRequestedFromDate() 
-    {
+    public function getRequestedFromDate() {
         return $this->fields['RequestedFromDate']['FieldValue'];
     }
 
     /**
      * Sets the value of the RequestedFromDate property.
-     * 
+     *
      * @param string RequestedFromDate
      * @return this instance
      */
-    public function setRequestedFromDate($value) 
-    {
+    public function setRequestedFromDate($value) {
         $this->fields['RequestedFromDate']['FieldValue'] = $value;
         return $this;
     }
 
     /**
      * Sets the value of the RequestedFromDate and returns this instance
-     * 
+     *
      * @param string $value RequestedFromDate
      * @return MarketplaceWebService_Model_GetReportRequestListRequest instance
      */
-    public function withRequestedFromDate($value)
-    {
+    public function withRequestedFromDate($value) {
         $this->setRequestedFromDate($value);
         return $this;
     }
@@ -434,44 +397,40 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
 
     /**
      * Checks if RequestedFromDate is set
-     * 
+     *
      * @return bool true if RequestedFromDate  is set
      */
-    public function isSetRequestedFromDate()
-    {
+    public function isSetRequestedFromDate() {
         return !is_null($this->fields['RequestedFromDate']['FieldValue']);
     }
 
     /**
      * Gets the value of the RequestedToDate property.
-     * 
+     *
      * @return string RequestedToDate
      */
-    public function getRequestedToDate() 
-    {
+    public function getRequestedToDate() {
         return $this->fields['RequestedToDate']['FieldValue'];
     }
 
     /**
      * Sets the value of the RequestedToDate property.
-     * 
+     *
      * @param string RequestedToDate
      * @return this instance
      */
-    public function setRequestedToDate($value) 
-    {
+    public function setRequestedToDate($value) {
         $this->fields['RequestedToDate']['FieldValue'] = $value;
         return $this;
     }
 
     /**
      * Sets the value of the RequestedToDate and returns this instance
-     * 
+     *
      * @param string $value RequestedToDate
      * @return MarketplaceWebService_Model_GetReportRequestListRequest instance
      */
-    public function withRequestedToDate($value)
-    {
+    public function withRequestedToDate($value) {
         $this->setRequestedToDate($value);
         return $this;
     }
@@ -479,15 +438,12 @@ class MarketplaceWebService_Model_GetReportRequestListRequest extends Marketplac
 
     /**
      * Checks if RequestedToDate is set
-     * 
+     *
      * @return bool true if RequestedToDate  is set
      */
-    public function isSetRequestedToDate()
-    {
+    public function isSetRequestedToDate() {
         return !is_null($this->fields['RequestedToDate']['FieldValue']);
     }
-
-
 
 
 }

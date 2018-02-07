@@ -120,6 +120,7 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         echo("=============================================================================\n");
 
         echo("        GetReportResponse\n");
+
         if ($response->isSetGetReportResult()) {
             $getReportResult = $response->getGetReportResult();
             echo("            GetReport");
@@ -129,6 +130,7 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
                 echo("                " . $getReportResult->getContentMd5() . "\n");
             }
         }
+
         if ($response->isSetResponseMetadata()) {
             echo("            ResponseMetadata\n");
             $responseMetadata = $response->getResponseMetadata();
@@ -142,7 +144,8 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         echo(stream_get_contents($request->getReport()) . "\n");
 
         echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "\n");
-    } catch (MarketplaceWebService_Exception $ex) {
+    }
+    catch (MarketplaceWebService_Exception $ex) {
         echo("Caught Exception: " . $ex->getMessage() . "\n");
         echo("Response Status Code: " . $ex->getStatusCode() . "\n");
         echo("Error Code: " . $ex->getErrorCode() . "\n");
