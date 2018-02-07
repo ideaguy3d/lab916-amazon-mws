@@ -1,7 +1,5 @@
 <?php
 
-echo "in the config file";
-
 define('DATE_FORMAT', 'Y-m-d\TH:i:s\Z');
 
 /************************************************************************
@@ -62,10 +60,7 @@ set_include_path(get_include_path() . PATH_SEPARATOR . '../../.');
 function __autoload($className) {
     $filePath = str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
     $includePaths = explode(PATH_SEPARATOR, get_include_path());
-    echo "<br> included paths = " . $includePaths
-        . "<br>file path = " . $filePath;
     foreach ($includePaths as $includePath) {
-        echo "<br> included path = " . $includePath;
         if (file_exists($includePath . DIRECTORY_SEPARATOR . $filePath)) {
             require_once $filePath;
             return;

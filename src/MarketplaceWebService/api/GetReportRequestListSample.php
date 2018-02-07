@@ -66,8 +66,13 @@ $config = array(
  * are defined in the .config.inc.php located in the same
  * directory as this sample
  ***********************************************************************/
-$service = new MarketplaceWebService_Client(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, $config,
-    APPLICATION_NAME, APPLICATION_VERSION);
+$service = new MarketplaceWebService_Client(
+    AWS_ACCESS_KEY_ID,
+    AWS_SECRET_ACCESS_KEY,
+    $config,
+    APPLICATION_NAME,
+    APPLICATION_VERSION
+);
 
 /************************************************************************
  * Setup request parameters and uncomment invoke to try out
@@ -102,7 +107,9 @@ function invokeGetReportRequestList(MarketplaceWebService_Interface $service, $r
         echo("        GetReportRequestListResponse<br>");
         if ($response->isSetGetReportRequestListResult()) {
             echo("            GetReportRequestListResult<br>");
+
             $getReportRequestListResult = $response->getGetReportRequestListResult();
+
             if ($getReportRequestListResult->isSetNextToken()) {
                 echo("                NextToken<br>");
                 echo("                    " . $getReportRequestListResult->getNextToken() . "<br>");
@@ -111,7 +118,9 @@ function invokeGetReportRequestList(MarketplaceWebService_Interface $service, $r
                 echo("                HasNext<br>");
                 echo("                    " . $getReportRequestListResult->getHasNext() . "<br>");
             }
+
             $reportRequestInfoList = $getReportRequestListResult->getReportRequestInfoList();
+
             foreach ($reportRequestInfoList as $reportRequestInfo) {
                 echo("                ReportRequestInfo<br>");
                 if ($reportRequestInfo->isSetReportRequestId()) {
