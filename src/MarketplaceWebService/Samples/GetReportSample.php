@@ -21,6 +21,8 @@
 
 include_once('.config.inc.php');
 
+echo "<h2>GetReport operation</h2>";
+
 /************************************************************************
  * Uncomment to configure the client instance. Configuration settings
  * are:
@@ -87,19 +89,17 @@ $service = new MarketplaceWebService_Client(
  * Setup request parameters and uncomment invoke to try out
  * sample for Get Report Action
  ***********************************************************************/
-// @TODO: set request. Action can be passed as MarketplaceWebService_Model_GetReportRequest
-// object or array of parameters
-$reportId = '<Your Report Id>';
+// @TODO: set request. Action can be passed as MarketplaceWebService_Model_GetReportRequest object or array of parameters
+$reportId = '8252356134017569';
 
 $parameters = array(
     'Merchant' => MERCHANT_ID,
     'Report' => @fopen('php://memory', 'rw+'),
     'ReportId' => $reportId,
-    'MWSAuthToken' => '', // Optional
+    //'MWSAuthToken' => '', // Optional
 );
 
 $request = new MarketplaceWebService_Model_GetReportRequest($parameters);
-
 
 invokeGetReport($service, $request);
 
@@ -116,10 +116,10 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
     try {
         $response = $service->getReport($request);
 
-        echo("Service Response\n");
-        echo("=============================================================================\n");
+        echo("Service Response<br>");
+        echo("=============================================================================<br>");
 
-        echo("        GetReportResponse\n");
+        echo("        GetReportResponse<br>");
 
         if ($response->isSetGetReportResult()) {
             $getReportResult = $response->getGetReportResult();
@@ -127,32 +127,32 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
 
             if ($getReportResult->isSetContentMd5()) {
                 echo("                ContentMd5");
-                echo("                " . $getReportResult->getContentMd5() . "\n");
+                echo("                " . $getReportResult->getContentMd5() . "<br>");
             }
         }
 
         if ($response->isSetResponseMetadata()) {
-            echo("            ResponseMetadata\n");
+            echo("            ResponseMetadata<br>");
             $responseMetadata = $response->getResponseMetadata();
             if ($responseMetadata->isSetRequestId()) {
-                echo("                RequestId\n");
-                echo("                    " . $responseMetadata->getRequestId() . "\n");
+                echo("                RequestId<br>");
+                echo("                    " . $responseMetadata->getRequestId() . "<br>");
             }
         }
 
-        echo("        Report Contents\n");
-        echo(stream_get_contents($request->getReport()) . "\n");
+        echo("        Report Contents<br>");
+        echo(stream_get_contents($request->getReport()) . "<br>");
 
-        echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "\n");
+        echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "<br>");
     }
     catch (MarketplaceWebService_Exception $ex) {
-        echo("Caught Exception: " . $ex->getMessage() . "\n");
-        echo("Response Status Code: " . $ex->getStatusCode() . "\n");
-        echo("Error Code: " . $ex->getErrorCode() . "\n");
-        echo("Error Type: " . $ex->getErrorType() . "\n");
-        echo("Request ID: " . $ex->getRequestId() . "\n");
-        echo("XML: " . $ex->getXML() . "\n");
-        echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "\n");
+        echo("Caught Exception: " . $ex->getMessage() . "<br>");
+        echo("Response Status Code: " . $ex->getStatusCode() . "<br>");
+        echo("Error Code: " . $ex->getErrorCode() . "<br>");
+        echo("Error Type: " . $ex->getErrorType() . "<br>");
+        echo("Request ID: " . $ex->getRequestId() . "<br>");
+        echo("XML: " . $ex->getXML() . "<br>");
+        echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
     }
 }
                                                                                 

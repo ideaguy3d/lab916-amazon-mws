@@ -98,7 +98,7 @@ $marketplaceIdArray = array("Id" => array('', ''));
 $parameters = array(
     'Merchant' => MERCHANT_ID,
     // 'MarketplaceIdList' => $marketplaceIdArray,
-    'ReportType' => '_GET_MERCHANT_LISTINGS_DATA_',
+    'ReportType' => '_GET_XML_ALL_ORDERS_DATA_BY_ORDER_DATE_',
     'ReportOptions' => 'ShowSalesChannel=true',
     'MWSAuthToken' => '', // Optional
 );
@@ -176,8 +176,7 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
         }
 
         echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "<br>\n");
-    }
-    catch (MarketplaceWebService_Exception $ex) {
+    } catch (MarketplaceWebService_Exception $ex) {
         echo("Caught Exception: " . $ex->getMessage() . "<br>\n");
         echo("Response Status Code: " . $ex->getStatusCode() . "<br>\n");
         echo("Error Code: " . $ex->getErrorCode() . "<br>\n");
@@ -196,23 +195,23 @@ function invokeGetReportRequestList(MarketplaceWebService_Interface $service, $r
         echo("=============================================================================<br>");
 
         echo("        GetReportRequestListResponse<br>");
-        if($response->isSetGetReportRequestListResult()) {
+        if ($response->isSetGetReportRequestListResult()) {
             echo("            GetReportRequestListResult<br>");
             $getReportRequestListResult = $response->getGetReportRequestListResult();
 
-            if($getReportRequestListResult->isSetNextToken()) {
+            if ($getReportRequestListResult->isSetNextToken()) {
                 echo("                NextToken<br>");
                 echo " ~ " . $getReportRequestListResult->getNextToken() . "<br>";
             }
 
-            if($getReportRequestListResult->isSetHasNext()) {
+            if ($getReportRequestListResult->isSetHasNext()) {
                 echo("                HasNext<br>");
-                echo " ~ " . $getReportRequestListResult.getHasNext() . "<br>";
+                echo " ~ " . $getReportRequestListResult . getHasNext() . "<br>";
             }
 
             $reportRequestInfoList = $getReportRequestListResult->getReportRequestInfoList();
 
-            foreach($reportRequestInfoList as $reportRequestInfo) {
+            foreach ($reportRequestInfoList as $reportRequestInfo) {
                 echo("                ReportRequestInfo<br>");
                 if ($reportRequestInfo->isSetReportRequestId()) {
                     echo("                    ReportRequestId<br>");
@@ -260,11 +259,10 @@ function invokeGetReportRequestList(MarketplaceWebService_Interface $service, $r
             }
         }
 
-        if($response->isSetResponseMetadata()) {
+        if ($response->isSetResponseMetadata()) {
 
         }
-    }
-    catch (MarketplaceWebService_Exception $ex) {
+    } catch (MarketplaceWebService_Exception $ex) {
 
     }
 }
