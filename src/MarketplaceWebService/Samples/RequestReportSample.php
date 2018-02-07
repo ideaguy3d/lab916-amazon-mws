@@ -21,6 +21,8 @@
 
 include_once('.config.inc.php');
 
+echo "<h2>RequestReport API operation:</h2>";
+
 /************************************************************************
  * Uncomment to configure the client instance. Configuration settings
  * are:
@@ -29,7 +31,7 @@ include_once('.config.inc.php');
  * - Proxy host and port.
  * - MaxErrorRetry.
  ***********************************************************************/
-// IMPORTANT: Uncomment the approiate line for the country you wish to
+// IMPORTANT: Uncomment the appropriate line for the country you wish to
 // sell in:
 // United States:
 $serviceUrl = "https://mws.amazonservices.com";
@@ -111,7 +113,7 @@ $reportRequestListModel = new MarketplaceWebService_Model_GetReportRequestListRe
 //-- Using ReportOptions:
 $request->setReportOptions('ShowSalesChannel=true');
 
-//invokeRequestReport($service, $request);
+invokeRequestReport($service, $request);
 
 /**
  * Get Report List Action Sample:
@@ -266,5 +268,7 @@ function invokeGetReportRequestList(MarketplaceWebService_Interface $service, $r
 
     }
 }
+
+
 
 // end of PHP file

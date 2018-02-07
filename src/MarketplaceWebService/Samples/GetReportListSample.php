@@ -21,6 +21,8 @@
 
 include_once('.config.inc.php');
 
+echo "<h2>GetReportList operation</h2>";
+
 /************************************************************************
  * Uncomment to configure the client instance. Configuration settings
  * are:
@@ -87,26 +89,18 @@ $service = new MarketplaceWebService_Client(
  * Setup request parameters and uncomment invoke to try out
  * sample for Get Report List Action
  ***********************************************************************/
-// @TODO: set request. Action can be passed as MarketplaceWebService_Model_GetReportListRequest
-// object or array of parameters
-// $parameters = array (
-//   'Merchant' => MERCHANT_ID,
-//   'AvailableToDate' => new DateTime('now', new DateTimeZone('UTC')),
-//   'AvailableFromDate' => new DateTime('-6 months', new DateTimeZone('UTC')),
-//   'Acknowledged' => false, 
-//   'MWSAuthToken' => '<MWS Auth Token>', // Optional
-// );
-// 
-// $request = new MarketplaceWebService_Model_GetReportListRequest($parameters);
+// @TODO: set request. Action can be passed as MarketplaceWebService_Model_GetReportListRequest object or array of parameters
+$parameters = array(
+    'Merchant' => MERCHANT_ID,
+    'AvailableToDate' => new DateTime('now', new DateTimeZone('UTC')),
+    'AvailableFromDate' => new DateTime('-6 months', new DateTimeZone('UTC')),
+    'Acknowledged' => false,
+    // 'MWSAuthToken' => '<MWS Auth Token>', // Optional
+);
 
-// $request = new MarketplaceWebService_Model_GetReportListRequest();
-// $request->setMerchant(MERCHANT_ID);
-// $request->setAvailableToDate(new DateTime('now', new DateTimeZone('UTC')));
-// $request->setAvailableFromDate(new DateTime('-3 months', new DateTimeZone('UTC')));
-// $request->setAcknowledged(false);
-// $request->setMWSAuthToken('<MWS Auth Token>'); // Optional
+$request = new MarketplaceWebService_Model_GetReportListRequest($parameters);
 
-// invokeGetReportList($service, $request);
+invokeGetReportList($service, $request);
 
 /**
  * Get Report List Action Sample
@@ -116,74 +110,73 @@ $service = new MarketplaceWebService_Client(
  * @param MarketplaceWebService_Interface $service instance of MarketplaceWebService_Interface
  * @param mixed $request MarketplaceWebService_Model_GetReportList or array of parameters
  */
-function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
-{
+function invokeGetReportList(MarketplaceWebService_Interface $service, $request) {
     try {
         $response = $service->getReportList($request);
 
-        echo("Service Response\n");
-        echo("=============================================================================\n");
+        echo("Service Response<br>");
+        echo("=============================================================================<br>");
 
-        echo("        GetReportListResponse\n");
+        echo("        GetReportListResponse<br>");
         if ($response->isSetGetReportListResult()) {
-            echo("            GetReportListResult\n");
+            echo("            GetReportListResult<br>");
             $getReportListResult = $response->getGetReportListResult();
             if ($getReportListResult->isSetNextToken()) {
-                echo("                NextToken\n");
-                echo("                    " . $getReportListResult->getNextToken() . "\n");
+                echo("                NextToken<br>");
+
+                echo("                    " . $getReportListResult->getNextToken() . "<br>");
             }
             if ($getReportListResult->isSetHasNext()) {
-                echo("                HasNext\n");
-                echo("                    " . $getReportListResult->getHasNext() . "\n");
+                echo("                HasNext<br>");
+                echo("                    " . $getReportListResult->getHasNext() . "<br>");
             }
             $reportInfoList = $getReportListResult->getReportInfoList();
             foreach ($reportInfoList as $reportInfo) {
-                echo("                ReportInfo\n");
+                echo("                ReportInfo<br>");
                 if ($reportInfo->isSetReportId()) {
-                    echo("                    ReportId\n");
-                    echo("                        " . $reportInfo->getReportId() . "\n");
+                    echo("                    ReportId<br>");
+                    echo("                        " . $reportInfo->getReportId() . "<br>");
                 }
                 if ($reportInfo->isSetReportType()) {
-                    echo("                    ReportType\n");
-                    echo("                        " . $reportInfo->getReportType() . "\n");
+                    echo("                    ReportType<br>");
+                    echo("                        " . $reportInfo->getReportType() . "<br>");
                 }
                 if ($reportInfo->isSetReportRequestId()) {
-                    echo("                    ReportRequestId\n");
-                    echo("                        " . $reportInfo->getReportRequestId() . "\n");
+                    echo("                    ReportRequestId<br>");
+                    echo("                        " . $reportInfo->getReportRequestId() . "<br>");
                 }
                 if ($reportInfo->isSetAvailableDate()) {
-                    echo("                    AvailableDate\n");
-                    echo("                        " . $reportInfo->getAvailableDate()->format(DATE_FORMAT) . "\n");
+                    echo("                    AvailableDate<br>");
+                    echo("                        " . $reportInfo->getAvailableDate()->format(DATE_FORMAT) . "<br>");
                 }
                 if ($reportInfo->isSetAcknowledged()) {
-                    echo("                    Acknowledged\n");
-                    echo("                        " . $reportInfo->getAcknowledged() . "\n");
+                    echo("                    Acknowledged<br>");
+                    echo("                        " . $reportInfo->getAcknowledged() . "<br>");
                 }
                 if ($reportInfo->isSetAcknowledgedDate()) {
-                    echo("                    AcknowledgedDate\n");
-                    echo("                        " . $reportInfo->getAcknowledgedDate()->format(DATE_FORMAT) . "\n");
+                    echo("                    AcknowledgedDate<br>");
+                    echo("                        " . $reportInfo->getAcknowledgedDate()->format(DATE_FORMAT) . "<br>");
                 }
             }
         }
         if ($response->isSetResponseMetadata()) {
-            echo("            ResponseMetadata\n");
+            echo("            ResponseMetadata<br>");
             $responseMetadata = $response->getResponseMetadata();
             if ($responseMetadata->isSetRequestId()) {
-                echo("                RequestId\n");
-                echo("                    " . $responseMetadata->getRequestId() . "\n");
+                echo("                RequestId<br>");
+                echo("                    " . $responseMetadata->getRequestId() . "<br>");
             }
         }
 
-        echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "\n");
-    }
-    catch (MarketplaceWebService_Exception $ex) {
-        echo("Caught Exception: " . $ex->getMessage() . "\n");
-        echo("Response Status Code: " . $ex->getStatusCode() . "\n");
-        echo("Error Code: " . $ex->getErrorCode() . "\n");
-        echo("Error Type: " . $ex->getErrorType() . "\n");
-        echo("Request ID: " . $ex->getRequestId() . "\n");
-        echo("XML: " . $ex->getXML() . "\n");
-        echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "\n");
+        echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "<br>");
+    } catch (MarketplaceWebService_Exception $ex) {
+        echo("Caught Exception: " . $ex->getMessage() . "<br>");
+        echo("Response Status Code: " . $ex->getStatusCode() . "<br>");
+        echo("Error Code: " . $ex->getErrorCode() . "<br>");
+        echo("Error Type: " . $ex->getErrorType() . "<br>");
+        echo("Request ID: " . $ex->getRequestId() . "<br>");
+        echo("XML: " . $ex->getXML() . "<br>");
+        echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
     }
 }
 

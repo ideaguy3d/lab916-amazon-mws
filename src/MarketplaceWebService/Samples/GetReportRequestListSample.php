@@ -21,6 +21,8 @@
 
 include_once('.config.inc.php');
 
+echo "<h2>GetReportRequestList API operation:</h2>";
+
 /************************************************************************
  * Uncomment to configure the client instance. Configuration settings
  * are:
