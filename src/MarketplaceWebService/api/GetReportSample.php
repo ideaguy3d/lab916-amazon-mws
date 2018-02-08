@@ -74,23 +74,11 @@ $service = new MarketplaceWebService_Client(
     APPLICATION_VERSION);
 
 /************************************************************************
- * Uncomment to try out Mock Service that simulates MarketplaceWebService
- * responses without calling MarketplaceWebService service.
- *
- * Responses are loaded from local XML files. You can tweak XML files to
- * experiment with various outputs during development
- *
- * XML files available under MarketplaceWebService/Mock tree
- *
- ***********************************************************************/
-// $service = new MarketplaceWebService_Mock();
-
-/************************************************************************
  * Setup request parameters and uncomment invoke to try out
  * sample for Get Report Action
  ***********************************************************************/
 // @TODO: set request. Action can be passed as MarketplaceWebService_Model_GetReportRequest object or array of parameters
-$reportId = '8252356134017569';
+$reportId = '8272391414017570';
 
 $parameters = array(
     'Merchant' => MERCHANT_ID,
@@ -124,7 +112,6 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         if ($response->isSetGetReportResult()) {
             $getReportResult = $response->getGetReportResult();
             echo("            GetReport");
-
             if ($getReportResult->isSetContentMd5()) {
                 echo("                ContentMd5");
                 echo("                " . $getReportResult->getContentMd5() . "<br>");
@@ -139,6 +126,7 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
                 echo("                    " . $responseMetadata->getRequestId() . "<br>");
             }
         }
+
 
         echo("        Report Contents<br>");
         echo(stream_get_contents($request->getReport()) . "<br>");
