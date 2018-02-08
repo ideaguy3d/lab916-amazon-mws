@@ -116,21 +116,23 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
 
         echo("Service Response<br>");
         echo("=============================================================================<br>");
-
         echo("        GetReportListResponse<br>");
+
         if ($response->isSetGetReportListResult()) {
             echo("            GetReportListResult<br>");
             $getReportListResult = $response->getGetReportListResult();
+
             if ($getReportListResult->isSetNextToken()) {
                 echo("                NextToken<br>");
-
                 echo("                    " . $getReportListResult->getNextToken() . "<br>");
             }
             if ($getReportListResult->isSetHasNext()) {
                 echo("                HasNext<br>");
                 echo("                    " . $getReportListResult->getHasNext() . "<br>");
             }
+
             $reportInfoList = $getReportListResult->getReportInfoList();
+
             foreach ($reportInfoList as $reportInfo) {
                 echo("                ReportInfo<br>");
                 if ($reportInfo->isSetReportId()) {
@@ -159,6 +161,7 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
                 }
             }
         }
+
         if ($response->isSetResponseMetadata()) {
             echo("            ResponseMetadata<br>");
             $responseMetadata = $response->getResponseMetadata();
@@ -169,7 +172,8 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
         }
 
         echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "<br>");
-    } catch (MarketplaceWebService_Exception $ex) {
+    }
+    catch (MarketplaceWebService_Exception $ex) {
         echo("Caught Exception: " . $ex->getMessage() . "<br>");
         echo("Response Status Code: " . $ex->getStatusCode() . "<br>");
         echo("Error Code: " . $ex->getErrorCode() . "<br>");

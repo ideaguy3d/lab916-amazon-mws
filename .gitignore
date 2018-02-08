@@ -7,7 +7,7 @@ config/settings-e2e.yml
 .idea
 cloud_sql_proxy.exe
 **/**/app.yaml
-**/.idea
+.idea
 node_modules
 **/*.xml
 **/**/*.xml

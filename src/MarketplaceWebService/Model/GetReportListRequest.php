@@ -42,8 +42,6 @@ require_once ('MarketplaceWebService/Model.php');
  */ 
 class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebService_Model
 {
-
-
     /**
      * Construct new MarketplaceWebService_Model_GetReportListRequest
      * 
