@@ -165,27 +165,27 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
 
                 if ($info->isSetReportId()) {
                     $rrTemp["reportId"] = $info->getReportId();
-                    echo "<strong> reportId: </strong> " . $rr["reportId"];
+                    echo "<strong> reportId: </strong> " . $rrTemp["reportId"];
                 }
 
                 if ($info->isSetReportType()) {
                     $rrTemp["reportType"] = $info->getReportType();
-                    //echo "<br> <strong> reportType: </strong>" . $rr["reportType"];
+                    //echo "<br> <strong> reportType: </strong>" . $rrTemp["reportType"];
                 }
 
                 if ($info->isSetReportRequestId()) {
                     $rrTemp["reportRequestId"] = $info->getReportRequestId();
-                    //echo "<br> <strong>reportRequestInfo</strong>" . $rr["reportRequestId"];
+                    //echo "<br> <strong>reportRequestInfo</strong>" . $rrTemp["reportRequestId"];
                 }
 
                 if ($info->isSetAvailableDate()) {
                     $rrTemp["availableDate"] = $info->getAvailableDate()->format(DATE_FORMAT);
-                    //echo "<br> <strong> availableDate: </strong>" . $rr["availableDate"];
+                    //echo "<br> <strong> availableDate: </strong>" . $rrTemp["availableDate"];
                 }
 
                 if ($info->isSetAcknowledged()) {
                     $rrTemp["acknowledged"] = $info->getAcknowledged() ? 'true' : 'false';
-                    //echo "<br> <strong>acknowledged: </strong>" . $rr["acknowledged"];
+                    //echo "<br> <strong>acknowledged: </strong>" . $rrTemp["acknowledged"];
                 }
 
                 if ($info->isSetAcknowledgedDate()) {
@@ -225,6 +225,8 @@ $paramsGetReport = [
     'ReportId' => $reportId,
 ];
 $requestGetReport = new MarketplaceWebService_Model_GetReportRequest($paramsGetReport);
+
+echo "<h2>ID Of this report: $reportId</h2>";
 
 invokeGetReport($service, $requestGetReport);
 
