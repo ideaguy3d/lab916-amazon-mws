@@ -30,9 +30,18 @@ $service = new MarketplaceWebService_Client(
     APPLICATION_VERSION
 );
 
+//-- Get the last 30 days:
+$curDate = date("Y-m-d\Th:i:s");
+$oneMonthAgo = strtotime("-1 Month");
+$oneMonthAgoDate = date("Y-m-d\Th:i:s", $oneMonthAgo);
+
+echo "<br><br> 1 month ago date = $oneMonthAgoDate <br><br>";
+
 $paramsRequestReport = array(
     'Merchant' => MERCHANT_ID,
     'ReportType' => '_GET_FLAT_FILE_ALL_ORDERS_DATA_BY_ORDER_DATE_',
+    'StartDate' => $oneMonthAgoDate,
+    'EndDate' => $curDate,
     'ReportOptions' => 'ShowSalesChannel=true',
 );
 
@@ -68,7 +77,6 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
         echo("<br>=====================<br>\n");
         echo(' ~ "RequestReport" response ~<br>');
         echo("=====================<br>\n");
-
         echo("<br>        RequestReportResponse<br>\n");
 
         if ($response->isSetRequestReportResult()) {

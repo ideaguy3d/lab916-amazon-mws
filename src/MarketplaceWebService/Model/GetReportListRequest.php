@@ -472,7 +472,6 @@ class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebSer
         return $this;
     }
 
-
     /**
      * Checks if ReportRequestIdList  is set
      * 
