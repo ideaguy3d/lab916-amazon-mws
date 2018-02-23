@@ -1,11 +1,18 @@
 <?php
+/**
+ * Created by Julius Alvarado.
+ * User: Lab916
+ * Date: 2/22/2018
+ * Time: 4:05 PM
+ */
+
 
 define('DATE_FORMAT', 'Y-m-d\TH:i:s\Z');
 
 /************************************************************************
  * REQUIRED
  *
- * * Access Key ID and Secret Acess Key ID, obtained from:
+ * * Access Key ID and Secret Access Key ID, obtained from:
  * http://aws.amazon.com
  *
  * IMPORTANT: Your Secret Access Key is a secret, and should be known
@@ -23,7 +30,7 @@ define('AWS_SECRET_ACCESS_KEY', 'G4jOLHApvafsHjEkBb//3OMJ65OLto+1MUmj1ONn');
  * All MWS requests must contain a User-Agent header. The application
  * name and version defined below are used in creating this value.
  ***********************************************************************/
-define('APPLICATION_NAME', 'L9BetaApp');
+define('APPLICATION_NAME', 'DataLab916');
 define('APPLICATION_VERSION', '0.0.1');
 
 /************************************************************************
@@ -32,7 +39,7 @@ define('APPLICATION_VERSION', '0.0.1');
  * All MWS requests must contain the seller's merchant ID and
  * marketplace ID.
  ***********************************************************************/
-define('MERCHANT_ID', 'AP8E9QUPPRI7');
+define('MERCHANT_ID', 'A328KHL2CSCCRL');
 
 /************************************************************************
  * OPTIONAL ON SOME INSTALLATIONS
