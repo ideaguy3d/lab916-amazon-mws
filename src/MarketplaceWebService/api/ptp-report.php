@@ -10,7 +10,7 @@ include_once('ptp-config.php');
 
 echo "<style>html, body {color: #2f2f2f;}</style>";
 
-echo "<h2>Lab916 Amazon MWS API for <b>Prime Time Packaging</b></h2><hr>";
+echo "<h2>Lab916 - <strong>Prime Time Packaging</strong></h2><hr>";
 
 // United States:
 $serviceUrl = "https://mws.amazonservices.com";
@@ -44,7 +44,7 @@ $paramsRequestReport = array(
     'StartDate' => $oneMonthAgoDate,
     'EndDate' => $curDate,
     'ReportOptions' => 'ShowSalesChannel=true',
-'MWSAuthToken' => 'amzn.mws.eab0dfe5-9c2b-743b-6f84-05e4348b9f3f',
+    'MWSAuthToken' => 'amzn.mws.eab0dfe5-9c2b-743b-6f84-05e4348b9f3f',
 );
 $paramsGetReportList = [
     'Merchant' => MERCHANT_ID,
@@ -62,7 +62,6 @@ invokeRequestReport($service, $requestRequestReportModel);
 echo "<br><hr><br>";
 $labGetReportList = invokeGetReportList($service, $requestGetReportListModel);
 echo "<br><hr><br>";
-
 
 /**
  * RequestReport Action
@@ -226,7 +225,6 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
         echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
     }
 }
-
 
 $reportId = $labGetReportList["row1"]["reportId"];
 $paramsGetReport = [
