@@ -71,7 +71,8 @@ $service = new MarketplaceWebService_Client(
     AWS_SECRET_ACCESS_KEY,
     $config,
     APPLICATION_NAME,
-    APPLICATION_VERSION);
+    APPLICATION_VERSION
+);
 
 /************************************************************************
  * Setup request parameters and uncomment invoke to try out
