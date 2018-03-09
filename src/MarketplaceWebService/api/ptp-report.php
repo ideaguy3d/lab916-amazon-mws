@@ -15,6 +15,7 @@ echo "<h2>Lab916 - <strong>Prime Time Packaging</strong></h2><hr>";
 // United States:
 $serviceUrl = "https://mws.amazonservices.com";
 
+// MWS Auth Token
 $config = array(
     'ServiceURL' => $serviceUrl,
     'ProxyHost' => null,
