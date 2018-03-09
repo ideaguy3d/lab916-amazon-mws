@@ -93,26 +93,32 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
             if ($requestReportResult->isSetReportRequestInfo()) {
                 $reportRequestInfo = $requestReportResult->getReportRequestInfo();
                 echo("                ReportRequestInfo<br><br>\n");
+
                 if ($reportRequestInfo->isSetReportRequestId()) {
                     echo("                    ReportRequestId<br>\n");
                     echo("                        " . $reportRequestInfo->getReportRequestId() . "<br><br>\n");
                 }
+
                 if ($reportRequestInfo->isSetReportType()) {
                     echo("                    ReportType<br>\n");
                     echo("                        " . $reportRequestInfo->getReportType() . "<br><br>\n");
                 }
+
                 if ($reportRequestInfo->isSetStartDate()) {
                     echo("                    StartDate<br>\n");
                     echo("                        " . $reportRequestInfo->getStartDate()->format(DATE_FORMAT) . "<br><br>\n");
                 }
+
                 if ($reportRequestInfo->isSetEndDate()) {
                     echo("                    EndDate<br>\n");
                     echo("                        " . $reportRequestInfo->getEndDate()->format(DATE_FORMAT) . "<br><br>\n");
                 }
+
                 if ($reportRequestInfo->isSetSubmittedDate()) {
                     echo("                    SubmittedDate<br>\n");
                     echo("                        " . $reportRequestInfo->getSubmittedDate()->format(DATE_FORMAT) . "<br><br>\n");
                 }
+
                 if ($reportRequestInfo->isSetReportProcessingStatus()) {
                     echo("                    ReportProcessingStatus<br>\n");
                     echo("                        " . $reportRequestInfo->getReportProcessingStatus() . "<br><br>\n");

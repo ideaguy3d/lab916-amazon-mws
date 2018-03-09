@@ -64,9 +64,7 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
     try {
         $response = $service->requestReport($request);
 
-        echo("<br>=====================<br>");
-        echo(' ~ "RequestReport" response ~ ');
-        echo("<br>=====================<br>");
+        echo('<br> ~ "RequestReport" response ~ <br>');
 
         if ($response->isSetRequestReportResult()) {
             echo "Request Report result:<br>";
@@ -74,6 +72,27 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
 
             if ($requestReportResult->isSetReportRequestInfo()) {
                 $reportRequestInfo = $requestReportResult->getReportRequestInfo();
+                echo "<br>Report Request Info:";
+
+                if($reportRequestInfo->isSetReportRequestId()) {
+                    echo "<br>Report Request ID: " . $reportRequestInfo->getReportRequestId();
+                }
+
+                if($reportRequestInfo->isSetStartDate()) {
+                    echo "<br>Start Date: " . $reportRequestInfo->getStartDate()->format(DATE_FORMAT);
+                }
+
+                if($reportRequestInfo->isSetEndDate()) {
+                    echo "<br>End Date: " . $reportRequestInfo->getEndDate()->format(DATE_FORMAT);
+                }
+
+                if($reportRequestInfo->isSetSubmittedDate()) {
+                    echo "<br> Submitted Date: " . $reportRequestInfo->getSubmittedDate()->format(DATE_FORMAT);
+                }
+
+                if($reportRequestInfo->isSetReportProcessingStatus()) {
+                    echo "<br> Report Processing Status: " . $reportRequestInfo->getReportProcessingStatus();
+                }
             }
         }
 
