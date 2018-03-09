@@ -39,14 +39,14 @@ $oneMonthAgoDate = date("Y-m-d\Th:i:s", $oneMonthAgo);
 
 echo "<br><br> 1 month ago date = $oneMonthAgoDate <br><br>";
 
-$paramsRequestReport = array(
+$paramsRequestReport = [
     'Merchant' => MERCHANT_ID,
     'ReportType' => '_GET_FLAT_FILE_ALL_ORDERS_DATA_BY_ORDER_DATE_',
     'StartDate' => $oneMonthAgoDate,
     'EndDate' => $curDate,
     'ReportOptions' => 'ShowSalesChannel=true',
     'MWSAuthToken' => 'amzn.mws.eab0dfe5-9c2b-743b-6f84-05e4348b9f3f',
-);
+];
 $paramsGetReportList = [
     'Merchant' => MERCHANT_ID,
     'AvailableToDate' => new DateTime('now', new DateTimeZone('UTC')),
@@ -59,9 +59,12 @@ $requestRequestReportModel = new MarketplaceWebService_Model_RequestReportReques
 $requestGetReportListModel = new MarketplaceWebService_Model_GetReportListRequest($paramsGetReportList);
 
 /** -- Action Invocations -- **/
-invokeRequestReport($service, $requestRequestReportModel);
+$labRequestReport = invokeRequestReport($service, $requestRequestReportModel);
+
 echo "<br><hr><br>";
+
 $labGetReportList = invokeGetReportList($service, $requestGetReportListModel);
+
 echo "<br><hr><br>";
 
 /**
@@ -71,6 +74,8 @@ echo "<br><hr><br>";
  *
  * @param MarketplaceWebService_Interface $service instance of MarketplaceWebService_Interface
  * @param mixed $request MarketplaceWebService_Model_GetReportList or array of parameters
+ *
+ * @return int - will return 1 if successful or -1 if failure
  */
 function invokeRequestReport(MarketplaceWebService_Interface $service, $request) {
     try {
@@ -125,6 +130,9 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
         }
 
         echo("            ResponseHeaderMetadata: " . $response->getResponseHeaderMetadata() . "<br>\n");
+
+        // we hit the end of the try block so everything succeeded.
+        return 1;
     }
     catch (MarketplaceWebService_Exception $ex) {
         echo("Caught Exception: " . $ex->getMessage() . "<br>\n");
@@ -134,6 +142,8 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
         echo("Request ID: " . $ex->getRequestId() . "<br>\n");
         echo("XML: " . $ex->getXML() . "<br>\n");
         echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "\n");
+
+        return -1;
     }
 }
 
@@ -152,8 +162,8 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
         $rr = []; // response result
 
         echo("<br>===========================<br>");
-        echo(' ~ "GetReportList" response ~<br>');
-        echo("===========================<br>");
+        echo(' ~ "GetReportList" response ~ ');
+        echo("<br>===========================<br>");
 
         if ($response->isSetGetReportListResult()) {
             $getReportListResult = $response->getGetReportListResult();
