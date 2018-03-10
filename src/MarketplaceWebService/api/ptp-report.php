@@ -198,22 +198,18 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
                     $rrTemp["reportType"] = $info->getReportType();
                     //echo "<br> <strong> reportType: </strong>" . $rrTemp["reportType"];
                 }
-
                 if ($info->isSetReportRequestId()) {
                     $rrTemp["reportRequestId"] = $info->getReportRequestId();
                     //echo "<br> <strong>reportRequestInfo</strong>" . $rrTemp["reportRequestId"];
                 }
-
                 if ($info->isSetAvailableDate()) {
                     $rrTemp["availableDate"] = $info->getAvailableDate()->format(DATE_FORMAT);
                     //echo "<br> <strong> availableDate: </strong>" . $rrTemp["availableDate"];
                 }
-
                 if ($info->isSetAcknowledged()) {
                     $rrTemp["acknowledged"] = $info->getAcknowledged() ? 'true' : 'false';
                     //echo "<br> <strong>acknowledged: </strong>" . $rrTemp["acknowledged"];
                 }
-
                 if ($info->isSetAcknowledgedDate()) {
                     $rrTemp["acknowledgedDate"] = $info->getAcknowledgedDate() . format(DATE_FORMAT);
                     echo "<br> <strong> acknowledgedDate: </strong>" . $rr["acknowledgedDate"];
@@ -221,6 +217,7 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
 
                 $rr["row" . $count] = $rrTemp;
             }
+
         }
 
         if ($response->isSetResponseMetadata()) {
@@ -242,6 +239,12 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
         echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
     }
 }
+
+/**
+ * --------------------------------------------------------------------------------------
+ * -------------------------- Request Report --------------------------------------------
+ * --------------------------------------------------------------------------------------
+ **/
 
 $reportId = $labGetReportList["row1"]["reportId"];
 $paramsGetReport = [
@@ -267,8 +270,8 @@ invokeGetReport($service, $requestGetReport);
 function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
     try {
         echo("<br>====================<br>");
-        echo(' ~ "GetReport" response ~<br>');
-        echo("====================<br>");
+        echo('~ "GetReport" response ~');
+        echo("<br>====================<br>");
 
         $response = $service->getReport($request);
         $rr = [];
@@ -276,13 +279,13 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         if ($response->isSetGetReportResult()) {
             $getReportResult = $response->getGetReportResult();
             echo "<h3 style='margin-bottom: 0.5em;'>GetReport data</h3>";
+
             if ($getReportResult->isSetContentMd5()) {
                 echo("<h4>ContentMD5:</h4>");
                 $rr["contentMd5"] = $getReportResult->getContentMd5();
                 echo "Content-MD5: " . $rr["contentMd5"];
             }
         }
-
         if ($response->isSetResponseMetadata()) {
             echo "<h3>ResponseMetadata</h3>";
             $responseMetadata = $response->getResponseMetadata();
@@ -306,4 +309,3 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
     }
 }
-

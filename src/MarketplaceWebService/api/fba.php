@@ -9,8 +9,9 @@
 
 include_once(".config.inc.php");
 
-//          -- Fields --
+// -- Fields --
 $mwsAuthToken = isset($_GET["mws-auth-token"]) ? $_GET["mws-auth-token"] : null;
+
 $serviceUrl = "https://mws.amazonservices.com"; // United States
 $config = array(
     'ServiceURL' => $serviceUrl,
@@ -58,13 +59,23 @@ $paramsGetReportList = [
 $requestRequestReportModel = new MarketplaceWebService_Model_RequestReportRequest($paramsRequestReport);
 $requestGetReportListModel = new MarketplaceWebService_Model_GetReportListRequest($paramsGetReportList);
 
-$labRequestReport = invokeRequestReport($service, $requestGetReportListModel);
+
+/**------------------------
+ * -- Action Invocations --
+ * ------------------------**/
+
+$labRequestReport = invokeRequestReport($service, $requestRequestReportModel);
+echo "<br><hr><br>";
+$labGetReportList = invokeGetReportList($service, $requestGetReportListModel);
+echo "<br><hr><br>";
 
 function invokeRequestReport(MarketplaceWebService_Interface $service, $request) {
     try {
         $response = $service->requestReport($request);
 
+        echo("<br>===========================<br>");
         echo('<br> ~ "RequestReport" response ~ <br>');
+        echo("<br>===========================<br>");
 
         if ($response->isSetRequestReportResult()) {
             echo "Request Report result:<br>";
@@ -74,36 +85,181 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
                 $reportRequestInfo = $requestReportResult->getReportRequestInfo();
                 echo "<br>Report Request Info:";
 
-                if($reportRequestInfo->isSetReportRequestId()) {
+                if ($reportRequestInfo->isSetReportRequestId()) {
                     echo "<br>Report Request ID: " . $reportRequestInfo->getReportRequestId();
                 }
 
-                if($reportRequestInfo->isSetStartDate()) {
+                if ($reportRequestInfo->isSetStartDate()) {
                     echo "<br>Start Date: " . $reportRequestInfo->getStartDate()->format(DATE_FORMAT);
                 }
 
-                if($reportRequestInfo->isSetEndDate()) {
+                if ($reportRequestInfo->isSetEndDate()) {
                     echo "<br>End Date: " . $reportRequestInfo->getEndDate()->format(DATE_FORMAT);
                 }
 
-                if($reportRequestInfo->isSetSubmittedDate()) {
+                if ($reportRequestInfo->isSetSubmittedDate()) {
                     echo "<br> Submitted Date: " . $reportRequestInfo->getSubmittedDate()->format(DATE_FORMAT);
                 }
 
-                if($reportRequestInfo->isSetReportProcessingStatus()) {
+                if ($reportRequestInfo->isSetReportProcessingStatus()) {
                     echo "<br> Report Processing Status: " . $reportRequestInfo->getReportProcessingStatus();
                 }
             }
         }
 
+        if ($response->isSetResponseMetadata()) {
+            echo "<br> ResponseMetadata:";
+            $responseMetaData = $response->getResponseMetadata();
+            if ($responseMetaData->isSetRequestId()) {
+                echo "<br>RequestId: " . $responseMetaData->getRequestId();
+            }
+        }
+
+        echo "<br>Response Meta Data Header: " . $response->getResponseHeaderMetadata() . "<br>";
+
+        // We hit the end of the try block so everything succeeded.
         return 1;
     }
     catch (MarketplaceWebService_Exception $ex) {
+        echo("Caught Exception: " . $ex->getMessage() . "<br>\n");
+        echo("Response Status Code: " . $ex->getStatusCode() . "<br>\n");
+        echo("Error Code: " . $ex->getErrorCode() . "<br>\n");
+        echo("Error Type: " . $ex->getErrorType() . "<br>\n");
+        echo("Request ID: " . $ex->getRequestId() . "<br>\n");
+        echo("XML: " . $ex->getXML() . "<br>\n");
+        echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "\n");
 
         return -1;
     }
 }
 
+/**
+ * GetReportList Action
+ * returns a list of reports created in the last 90 days
+ *
+ * @param MarketplaceWebService_Interface $service - Instance of MarketplaceWebService_Interface
+ * @param mixed $request - Instance of MarketplaceWebService_Model_
+ *
+ * @return array - An array holding all the response results
+ */
 function invokeGetReportList(MarketplaceWebService_Interface $service, $request) {
+    try {
+        $response = $service->getReportList($request);
+        $rr = [];
 
+        echo("<br>===========================<br>");
+        echo(' ~ "GetReportList" response ~ ');
+        echo("<br>===========================<br>");
+
+        if ($response->isSetGetReportListResult()) {
+            $getReportListResult = $response->getGetReportListResult();
+            $reportInfoList = $getReportListResult->getReportInfoList();
+
+            $count = 0;
+            foreach ($reportInfoList as $info) {
+                $rrTemp = [];
+                $count++;
+                echo "<h4 style='margin-bottom: 0.5em'>$count) GetReportList info:</h4>";
+
+                if ($info->isSetReportId()) {
+                    $rrTemp["reportId"] = $info->getReportId();
+                    echo "<strong> reportId: </strong> " . $rrTemp["reportId"];
+                }
+
+                if ($info->isSetReportType()) {
+                    $rrTemp["reportType"] = $info->getReportType();
+                    //echo "<br> <strong> reportType: </strong>" . $rrTemp["reportType"];
+                }
+                if ($info->isSetReportRequestId()) {
+                    $rrTemp["reportRequestId"] = $info->getReportRequestId();
+                    //echo "<br> <strong>reportRequestInfo</strong>" . $rrTemp["reportRequestId"];
+                }
+                if ($info->isSetAvailableDate()) {
+                    $rrTemp["availableDate"] = $info->getAvailableDate()->format(DATE_FORMAT);
+                    //echo "<br> <strong> availableDate: </strong>" . $rrTemp["availableDate"];
+                }
+                if ($info->isSetAcknowledged()) {
+                    $rrTemp["acknowledged"] = $info->getAcknowledged() ? 'true' : 'false';
+                    //echo "<br> <strong>acknowledged: </strong>" . $rrTemp["acknowledged"];
+                }
+                if ($info->isSetAcknowledgedDate()) {
+                    $rrTemp["acknowledgedDate"] = $info->getAcknowledgedDate() . format(DATE_FORMAT);
+                    echo "<br> <strong> acknowledgedDate: </strong>" . $rr["acknowledgedDate"];
+                }
+
+                $rr["row" . $count] = $rrTemp;
+            }
+        }
+
+        return $rr;
+    }
+    catch (MarketplaceWebService_Exception $ex) {
+        echo("Caught Exception: " . $ex->getMessage() . "<br>");
+        echo("Response Status Code: " . $ex->getStatusCode() . "<br>");
+        echo("Error Code: " . $ex->getErrorCode() . "<br>");
+        echo("Error Type: " . $ex->getErrorType() . "<br>");
+        echo("Request ID: " . $ex->getRequestId() . "<br>");
+        echo("XML: " . $ex->getXML() . "<br>");
+        echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
+
+        return -1;
+    }
+} 
+
+
+/**
+ * --------------------------------------------------------------------------------------
+ * -------------------------- Request Report --------------------------------------------
+ * --------------------------------------------------------------------------------------
+ **/
+
+$reportId = $labGetReportList["row1"]["reportId"];
+$paramsGetReport = [
+    'Merchant' => MERCHANT_ID,
+    'report' => @fopen('php://memory', 'rw+'),
+    'ReportId' => $reportId,
+    'MWSAuthToken' => $mwsAuthToken
+];
+$requestGetReport = new MarketplaceWebService_Model_GetReportRequest($paramsGetReport);
+
+echo "<h3>ID of this report: $reportId</h3>";
+echo "mws auth key = $mwsAuthToken <br>";
+
+invokeGetReport($service, $requestGetReport);
+
+/**
+ * GetReport Action
+ * Returns the contents of the report and the Content-MD5 header for
+ * the returned report body
+ *
+ * @param MarketplaceWebService_Interface $service - Instance of MarketplaceWebService_Interface
+ * @param mixed $request - An array of parameters
+ */
+function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
+    try {
+        echo("<br>====================<br>");
+        echo(' ~ "GetReport" response ~ ');
+        echo("<br>====================<br>");
+
+        $response = $service->getReport($request);
+        $rr = [];
+
+
+
+        // This h2 elem is where my web scraper .explode()
+        echo "<h2>Report Contents</h2>"; // EXTREMELY IMPORTANT
+        $rr["reportStream"] = stream_get_contents($request->getReport());
+        // emit "html" data
+        echo $rr["reportStream"];
+    }
+    catch (MarketplaceWebService_Exception $ex) {
+        echo("Caught Exception: " . $ex->getMessage() . "<br>");
+        echo("Response Status Code: " . $ex->getStatusCode() . "<br>");
+        echo("Error Code: " . $ex->getErrorCode() . "<br>");
+        echo("Error Type: " . $ex->getErrorType() . "<br>");
+        echo("Request ID: " . $ex->getRequestId() . "<br>");
+        echo("XML: " . $ex->getXML() . "<br>");
+        echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
+    }
 }
+

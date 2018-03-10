@@ -27,6 +27,7 @@ define('APPLICATION_NAME', 'L9BetaApp');
 define('APPLICATION_VERSION', '0.0.1');
 
 $merchantId = isset($_GET["merchant-id"]) ? $_GET["merchant-id"] : null;
+
 if ($merchantId === null) {
     echo " ( LAB - 916 There was no merchantId in the query string ) ";
     echo " ( ERROR - report will not get generated ) ";
