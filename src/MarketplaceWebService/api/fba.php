@@ -7,7 +7,7 @@
  */
 
 
-include_once(".config.inc.php");
+include_once("fba-config.php");
 
 // -- Fields --
 $mwsAuthToken = isset($_GET["mws-auth-token"]) ? $_GET["mws-auth-token"] : null;
@@ -22,8 +22,8 @@ $config = array(
 );
 
 if ($mwsAuthToken === null) {
-    echo " ( LAB 916 - mws auth token was not in the query string ) ";
-    echo " ( ERROR - The FBA report will not get generated. ) ";
+    echo " ( LAB 916 - mws auth token was not in the query string - ";
+    echo " - ERROR - The FBA report will not get generated. ) ";
 }
 
 echo "<h2>Lab916 AmazonMWS client</h2><hr>";
@@ -69,6 +69,17 @@ echo "<br><hr><br>";
 $labGetReportList = invokeGetReportList($service, $requestGetReportListModel);
 echo "<br><hr><br>";
 
+
+/**
+ * RequestReport Action
+ * Creates a report request, and sends request to Amazon MWS
+ * regardless of their acknowledgement status
+ *
+ * @param MarketplaceWebService_Interface $service instance of MarketplaceWebService_Interface
+ * @param mixed $request MarketplaceWebService_Model_GetReportList or array of parameters
+ *
+ * @return int - -1 if fail, 1 is success
+ */
 function invokeRequestReport(MarketplaceWebService_Interface $service, $request) {
     try {
         $response = $service->requestReport($request);
@@ -140,7 +151,7 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
  * @param MarketplaceWebService_Interface $service - Instance of MarketplaceWebService_Interface
  * @param mixed $request - Instance of MarketplaceWebService_Model_
  *
- * @return array - An array holding all the response results
+ * @return array - An array holding all the response results.
  */
 function invokeGetReportList(MarketplaceWebService_Interface $service, $request) {
     try {
@@ -204,28 +215,28 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
 
         return -1;
     }
-} 
+}
 
 
 /**
  * --------------------------------------------------------------------------------------
- * -------------------------- Request Report --------------------------------------------
+ * -------------------------------- Request Report --------------------------------------
  * --------------------------------------------------------------------------------------
  **/
 
-$reportId = $labGetReportList["row1"]["reportId"];
+$reportId = $labGetReportList["row9"]["reportId"];
 $paramsGetReport = [
     'Merchant' => MERCHANT_ID,
-    'report' => @fopen('php://memory', 'rw+'),
+    'Report' => @fopen('php://memory', 'rw+'),
     'ReportId' => $reportId,
-    'MWSAuthToken' => $mwsAuthToken
+    'MWSAuthToken' => $mwsAuthToken,
 ];
 $requestGetReport = new MarketplaceWebService_Model_GetReportRequest($paramsGetReport);
 
 echo "<h3>ID of this report: $reportId</h3>";
-echo "mws auth key = $mwsAuthToken <br>";
+echo " - mws auth key = $mwsAuthToken <br>";
 
-invokeGetReport($service, $requestGetReport);
+$labGetReport = invokeGetReport($service, $requestGetReport);
 
 /**
  * GetReport Action
@@ -234,6 +245,8 @@ invokeGetReport($service, $requestGetReport);
  *
  * @param MarketplaceWebService_Interface $service - Instance of MarketplaceWebService_Interface
  * @param mixed $request - An array of parameters
+ *
+ * @return int
  */
 function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
     try {
@@ -244,13 +257,33 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         $response = $service->getReport($request);
         $rr = [];
 
+        if($response->isSetGetReportResult()) {
+            $getReportResult = $response->getGetReportResult();
+            echo "<h3 style='margin-bottom: 0.5em;'>GetReport data</h3>";
 
+            if($getReportResult->isSetContentMd5()) {
+                echo("<h4>ContentMD5:</h4>");
+                $rr["contentMd5"] = $getReportResult->getContentMd5();
+                echo "Content-MD5: " . $rr["contentMd5"];
+            }
+        }
+
+        if ($response->isSetResponseMetadata()) {
+            echo "<h3>ResponseMetadata</h3>";
+            $responseMetadata = $response->getResponseMetadata();
+            if ($responseMetadata->isSetRequestId()) {
+                $rr["requestId"] = $responseMetadata->getRequestId();
+                echo "requestId: " . $rr["requestId"];
+            }
+        }
 
         // This h2 elem is where my web scraper .explode()
         echo "<h2>Report Contents</h2>"; // EXTREMELY IMPORTANT
         $rr["reportStream"] = stream_get_contents($request->getReport());
         // emit "html" data
         echo $rr["reportStream"];
+
+        return 1;
     }
     catch (MarketplaceWebService_Exception $ex) {
         echo("Caught Exception: " . $ex->getMessage() . "<br>");
@@ -260,6 +293,8 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         echo("Request ID: " . $ex->getRequestId() . "<br>");
         echo("XML: " . $ex->getXML() . "<br>");
         echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
+
+        return -1;
     }
 }
 

@@ -227,6 +227,7 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
         }
 
         $rr["responseHeaderMetaData"] = $response->getResponseHeaderMetadata();
+
         return $rr;
     }
     catch (MarketplaceWebService_Exception $ex) {
@@ -237,6 +238,8 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
         echo("Request ID: " . $ex->getRequestId() . "<br>");
         echo("XML: " . $ex->getXML() . "<br>");
         echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
+
+        return [-1];
     }
 }
 
