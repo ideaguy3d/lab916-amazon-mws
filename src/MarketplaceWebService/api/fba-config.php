@@ -6,6 +6,8 @@
  * Time: 6:15 PM
  */
 
+$merchantId = isset($_GET["merchant-id"]) ? $_GET["merchant-id"] : null;
+
 define('DATE_FORMAT', 'Y-m-d\TH:i:s\Z');
 
 /************************************************************************
@@ -32,11 +34,9 @@ define('AWS_SECRET_ACCESS_KEY', 'G4jOLHApvafsHjEkBb//3OMJ65OLto+1MUmj1ONn');
 define('APPLICATION_NAME', 'L9BetaApp');
 define('APPLICATION_VERSION', '0.0.1');
 
-$merchantId = isset($_GET["merchant-id"]) ? $_GET["merchant-id"] : null;
-
 if ($merchantId === null) {
     echo " ( LAB - 916 There was no merchantId in the query string, ";
-    echo " ( ERROR - report will not get generated ) ";
+    echo " ERROR - report will not get generated ) ";
 } 
 
 /************************************************************************

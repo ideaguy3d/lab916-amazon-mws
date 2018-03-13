@@ -132,7 +132,7 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
         return 1;
     }
     catch (MarketplaceWebService_Exception $ex) {
-        echo("Caught Exception: " . $ex->getMessage() . "<br>\n");
+        echo("<h1>Caught Exception:</h1> " . $ex->getMessage() . "<br>\n");
         echo("Response Status Code: " . $ex->getStatusCode() . "<br>\n");
         echo("Error Code: " . $ex->getErrorCode() . "<br>\n");
         echo("Error Type: " . $ex->getErrorType() . "<br>\n");
@@ -205,7 +205,7 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
         return $rr;
     }
     catch (MarketplaceWebService_Exception $ex) {
-        echo("Caught Exception: " . $ex->getMessage() . "<br>");
+        echo("<h1>Caught Exception:</h1>  " . $ex->getMessage() . "<br>");
         echo("Response Status Code: " . $ex->getStatusCode() . "<br>");
         echo("Error Code: " . $ex->getErrorCode() . "<br>");
         echo("Error Type: " . $ex->getErrorType() . "<br>");
@@ -213,7 +213,7 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
         echo("XML: " . $ex->getXML() . "<br>");
         echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
 
-        return -1;
+        return [-1];
     }
 }
 
