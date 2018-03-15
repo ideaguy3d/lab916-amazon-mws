@@ -52740,7 +52740,8 @@ h6, .h6 {
 /* Main navigation */
 .navbar-nav .nav-item.active .nav-link {
     color: #fff;
-    background-color: #434343;
+    /*background-color: #434343;*/
+    border: solid 1px #823434;
 }
 
 .navbar-nav .nav-link {
