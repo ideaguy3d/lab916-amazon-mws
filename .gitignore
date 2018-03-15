@@ -8,7 +8,7 @@ config/settings-e2e.yml
 cloud_sql_proxy.exe
 **/**/app.yaml
 .idea
-node_modules
+**/node_modules
 **/*.xml
 **/**/*.xml
 .idea/workspace.xml
