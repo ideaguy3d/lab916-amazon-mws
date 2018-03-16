@@ -3007,12 +3007,12 @@ body[class*="u-body--header-side"].u-body--header-side-opened .u-header__overlay
 /* Button Primary */
 .u-btn-primary {
     color: #fff;
-    background-color: #6bda95;
+    background-color: #eb3436;
 }
 
 .u-btn-primary:hover, .u-btn-primary.active {
-    border-color: #94e4b2;
-    background-color: #94e4b2;
+    border-color: #eb3436;
+    background-color: #eb3436;
 }
 
 .u-btn-primary:hover, .u-btn-primary:focus, .u-btn-primary.active {
@@ -52751,7 +52751,7 @@ h6, .h6 {
 
 .navbar-nav .nav-link:hover {
     color: #fff;
-    background-color: #6bda95;
+    background-color: whitesmoke;
 }
 
 /* Colors */
