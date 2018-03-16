@@ -233,10 +233,12 @@ $paramsGetReport = [
 ];
 $requestGetReport = new MarketplaceWebService_Model_GetReportRequest($paramsGetReport);
 
+
 echo "<h3>ID of this report: $reportId</h3>";
 echo " - mws auth key = $mwsAuthToken <br>";
 
-$labGetReport = invokeGetReport($service, $requestGetReport);
+invokeGetReport($service, $requestGetReport);
+
 
 /**
  * GetReport Action
@@ -245,8 +247,6 @@ $labGetReport = invokeGetReport($service, $requestGetReport);
  *
  * @param MarketplaceWebService_Interface $service - Instance of MarketplaceWebService_Interface
  * @param mixed $request - An array of parameters
- *
- * @return int
  */
 function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
     try {
@@ -257,11 +257,11 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         $response = $service->getReport($request);
         $rr = [];
 
-        if($response->isSetGetReportResult()) {
+        if ($response->isSetGetReportResult()) {
             $getReportResult = $response->getGetReportResult();
             echo "<h3 style='margin-bottom: 0.5em;'>GetReport data</h3>";
 
-            if($getReportResult->isSetContentMd5()) {
+            if ($getReportResult->isSetContentMd5()) {
                 echo("<h4>ContentMD5:</h4>");
                 $rr["contentMd5"] = $getReportResult->getContentMd5();
                 echo "Content-MD5: " . $rr["contentMd5"];
@@ -277,13 +277,9 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
             }
         }
 
-        // This h2 elem is where my web scraper .explode()
+        // This h2 elem is where my web scraper .explode()'s
         echo "<h2>Report Contents</h2>"; // EXTREMELY IMPORTANT
-        $rr["reportStream"] = stream_get_contents($request->getReport());
-        // emit "html" data
-        echo $rr["reportStream"];
-
-        return 1;
+        echo(stream_get_contents($request->getReport()));
     }
     catch (MarketplaceWebService_Exception $ex) {
         echo("Caught Exception: " . $ex->getMessage() . "<br>");
@@ -293,8 +289,6 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         echo("Request ID: " . $ex->getRequestId() . "<br>");
         echo("XML: " . $ex->getXML() . "<br>");
         echo("ResponseHeaderMetadata: " . $ex->getResponseHeaderMetadata() . "<br>");
-
-        return -1;
     }
 }
 

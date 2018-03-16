@@ -128,7 +128,6 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
             }
         }
 
-
         echo("        Report Contents<br>");
         echo(stream_get_contents($request->getReport()) . "<br>");
 
