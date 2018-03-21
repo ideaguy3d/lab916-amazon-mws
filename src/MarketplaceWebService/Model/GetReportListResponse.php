@@ -12,8 +12,7 @@
 /*******************************************************************************
  *  Marketplace Web Service PHP 5 Library
  *  Generated: Thu May 07 13:07:36 PDT 2009
- * 
- */
+**/
 
 /**
  *  @see MarketplaceWebService_Model

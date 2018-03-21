@@ -47,6 +47,7 @@ $paramsRequestReport = [
     'ReportOptions' => 'ShowSalesChannel=true',
     'MWSAuthToken' => 'amzn.mws.eab0dfe5-9c2b-743b-6f84-05e4348b9f3f',
 ];
+
 $paramsGetReportList = [
     'Merchant' => MERCHANT_ID,
     'AvailableToDate' => new DateTime('now', new DateTimeZone('UTC')),

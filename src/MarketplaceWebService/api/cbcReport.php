@@ -4,6 +4,8 @@
  * User: Lab916
  * Date: 2/16/2018
  * Time: 12:42 PM
+ *
+ * The script to get the data for City Bicycle Company
  */
 
 include_once('.config.inc.php');
