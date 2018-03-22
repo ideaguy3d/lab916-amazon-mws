@@ -229,6 +229,7 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
 
 
 $reportId = $labGetReportList["row1"]["reportId"];
+
 $paramsGetReport = [
     'Merchant' => MERCHANT_ID,
     'Report' => @fopen('php://memory', 'rw+'),

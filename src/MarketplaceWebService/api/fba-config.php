@@ -6,8 +6,8 @@
  * Time: 6:15 PM
  */
 
-$merchantId = isset($_GET["merchant-id"]) ? $_GET["merchant-id"] : null;
-
+//$merchantId = isset($_GET["merchant-id"]) ? $_GET["merchant-id"] : null;
+$merchantId = "ABP21ISLGLTPP";
 define('DATE_FORMAT', 'Y-m-d\TH:i:s\Z');
 
 /************************************************************************

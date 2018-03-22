@@ -10,7 +10,8 @@
 include_once("fba-config.php");
 
 // -- Fields --
-$mwsAuthToken = isset($_GET["mws-auth-token"]) ? $_GET["mws-auth-token"] : null;
+//$mwsAuthToken = isset($_GET["mws-auth-token"]) ? $_GET["mws-auth-token"] : null;
+$mwsAuthToken = "amzn.mws.dab1134a-4f0c-ad8d-53f2-bcc43a4f8b21"; // Majide
 
 $serviceUrl = "https://mws.amazonservices.com"; // United States
 $config = array(
@@ -218,12 +219,15 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
 }
 
 
+
+
 /**
  * --------------------------------------------------------------------------------------
  * -------------------------------- Request Report --------------------------------------
  * --------------------------------------------------------------------------------------
  **/
 
+// TODO: make sure this has a report enum of "_GET_FLAT_FILE_ALL_ORDERS_DATA_BY_ORDER_DATE_"
 $reportId = $labGetReportList["row9"]["reportId"];
 $paramsGetReport = [
     'Merchant' => MERCHANT_ID,
