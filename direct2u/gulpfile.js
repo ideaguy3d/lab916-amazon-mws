@@ -62,7 +62,6 @@ gulp.task('sass-dt', function() {
     .pipe(gulp.dest('./html/unify-main/misc/dark-theme/assets/css/'))
 });
 
-
 //
 // Watch
 //
@@ -70,7 +69,6 @@ gulp.task('sass-dt', function() {
 gulp.task('watch', function() {
   gulp.watch('./html/assets/include/scss/**/*.scss', ['sass']);
 });
-
 
 //
 // Default
