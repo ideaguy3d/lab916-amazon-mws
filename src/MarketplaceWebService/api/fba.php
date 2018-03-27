@@ -10,8 +10,8 @@
 include_once("fba-config.php");
 
 // -- Fields --
-//$mwsAuthToken = isset($_GET["mws-auth-token"]) ? $_GET["mws-auth-token"] : null;
-$mwsAuthToken = "amzn.mws.dab1134a-4f0c-ad8d-53f2-bcc43a4f8b21"; // Majide
+$mwsAuthToken = isset($_GET["mws-auth-token"]) ? $_GET["mws-auth-token"] : null;
+//$mwsAuthToken = "amzn.mws.dab1134a-4f0c-ad8d-53f2-bcc43a4f8b21"; // Majide
 
 $serviceUrl = "https://mws.amazonservices.com"; // United States
 $config = array(

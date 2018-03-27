@@ -218,7 +218,6 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
 
                 $rr["row" . $count] = $rrTemp;
             }
-
         }
 
         if ($response->isSetResponseMetadata()) {
@@ -300,8 +299,7 @@ function invokeGetReport(MarketplaceWebService_Interface $service, $request) {
         }
 
         echo "<h2>Report Contents</h2>";
-        $rr["reportStream"] = stream_get_contents($request->getReport());
-        echo $rr["reportStream"];
+        echo stream_get_contents($request->getReport());
     }
     catch (MarketplaceWebService_Exception $ex) {
         echo("Caught Exception: " . $ex->getMessage() . "<br>");
