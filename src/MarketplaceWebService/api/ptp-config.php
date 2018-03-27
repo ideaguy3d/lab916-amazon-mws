@@ -21,8 +21,8 @@ define('DATE_FORMAT', 'Y-m-d\TH:i:s\Z');
  * to anyone. It is important to keep your Secret Access Key confidential
  * to protect your account.
  ***********************************************************************/
-define('AWS_ACCESS_KEY_ID', 'AKIAIHWRIP2GWFFLLRBQ');
-define('AWS_SECRET_ACCESS_KEY', 'G4jOLHApvafsHjEkBb//3OMJ65OLto+1MUmj1ONn');
+define('AWS_ACCESS_KEY_ID', 'AKIAIHWRIP2GWFFLLRBQ'); // LAB 916 access key
+define('AWS_SECRET_ACCESS_KEY', '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'); // LAB 916 secret key
 
 /************************************************************************
  * REQUIRED

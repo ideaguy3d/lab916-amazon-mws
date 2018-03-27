@@ -9,9 +9,12 @@
 
 include_once("fba-config.php");
 
-// -- Fields --
+//-- Fields:
 $mwsAuthToken = isset($_GET["mws-auth-token"]) ? $_GET["mws-auth-token"] : null;
-//$mwsAuthToken = "amzn.mws.dab1134a-4f0c-ad8d-53f2-bcc43a4f8b21"; // Majide
+//--------------------------------------------
+// DEBUGGING - Force action for DEBUGGING APP
+//--------------------------------------------
+// $mwsAuthToken = "amzn.mws.dab1134a-4f0c-ad8d-53f2-bcc43a4f8b21"; // Majide
 
 $serviceUrl = "https://mws.amazonservices.com"; // United States
 $config = array(
@@ -219,8 +222,6 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
 }
 
 
-
-
 /**
  * --------------------------------------------------------------------------------------
  * -------------------------------- Request Report --------------------------------------
@@ -228,7 +229,19 @@ function invokeGetReportList(MarketplaceWebService_Interface $service, $request)
  **/
 
 // TODO: make sure this has a report enum of "_GET_FLAT_FILE_ALL_ORDERS_DATA_BY_ORDER_DATE_"
-$reportId = $labGetReportList["row9"]["reportId"];
+$reportId = "";
+$reportType = "";
+
+foreach ($labGetReportList as $row) {
+    $reportType = $row["reportType"];
+    if($reportType === "_GET_FLAT_FILE_ALL_ORDERS_DATA_BY_ORDER_DATE_") {
+        $reportId = $row["reportId"];
+        break;
+    }
+}
+// I may want to store this information in our DB.
+echo "<br><br> <h1>Report Type = $reportType, Report Id = $reportId</h1> <br><br>";
+
 $paramsGetReport = [
     'Merchant' => MERCHANT_ID,
     'Report' => @fopen('php://memory', 'rw+'),

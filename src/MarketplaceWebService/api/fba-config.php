@@ -6,7 +6,11 @@
  * Time: 6:15 PM
  */
 
-//$merchantId = isset($_GET["merchant-id"]) ? $_GET["merchant-id"] : null;
+//-- Fields:
+$merchantId = isset($_GET["merchant-id"]) ? $_GET["merchant-id"] : null;
+//--------------------------------------------
+// DEBUGGING - Force action for DEBUGGING APP
+//--------------------------------------------
 $merchantId = "ABP21ISLGLTPP";
 define('DATE_FORMAT', 'Y-m-d\TH:i:s\Z');
 
