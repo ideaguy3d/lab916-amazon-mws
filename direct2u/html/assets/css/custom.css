@@ -12,4 +12,29 @@
 
 .bel-hero-top-one {
   height: 86px;
+  background-color: #62cbb5;
+}
+
+.bel-hero-top-one img.bel-img-top-one {
+  margin-top: 22px;
+}
+
+.bel-hero-top-two {
+  height: 86px;
+  background-color: #333333;
+}
+
+.bel-hero-top-two h4 {
+  color: #ffffff;
+  font-weight: lighter;
+  padding-top: 30px;
+  font-size: 19px;
+}
+
+.bel-hero-top-two h4 span {
+  color: #62cbb5;
+}
+
+.bel-hero-header-one {
+  margin-bottom: 40px;
 }
