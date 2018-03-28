@@ -3,6 +3,24 @@
   color: #434343;
 }
 
+.bel-attention {
+  height: 136px;
+  background-color: #e6e5e5;
+  padding-top: 34px;
+}
+
+.bel-attention h3.text-center {
+  font-weight: lighter;
+  color: #333333;
+}
+
+span.bel-turqoise {
+  color: #62cbb5;
+  background-color: #fff;
+  padding: 2px 8px;
+  font-weight: bold !important;
+}
+
 .iframe-vid-block {
   position: relative;
   height: 0;

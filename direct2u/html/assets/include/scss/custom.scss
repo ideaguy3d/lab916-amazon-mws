@@ -10,11 +10,31 @@ $clrWineRed: #823434;
 $clrLabBlack: #434343;
 $clrBelTurqoise: #62cbb5;
 $clrBelBlack: #333333;
+$clrBelGrey: #e6e5e5;
+$clrFont: #434343;
 
 #navBar  {
 	* {
 		color: $clrLabBlack;
 	}
+}
+
+.bel-attention {
+	height: 136px;
+	background-color: $clrBelGrey;
+	padding-top: 34px;
+	
+	h3.text-center {
+		font-weight: lighter;
+		color: $clrBelBlack;
+	}
+}
+
+span.bel-turqoise {
+	color: $clrBelTurqoise;
+	background-color: #fff;
+	padding: 2px 8px;
+	font-weight: bold !important;
 }
 
 .iframe-vid-block {
