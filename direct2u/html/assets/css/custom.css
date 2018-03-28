@@ -3,6 +3,21 @@
   color: #434343;
 }
 
+.turqoise {
+  color: #62cbb5 !important;
+}
+
+.hero-h4 {
+  padding-left: 19px;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.hero-ul li {
+  font-weight: lighter;
+  font-size: 24px;
+}
+
 .bel-attention {
   height: 136px;
   background-color: #e6e5e5;
