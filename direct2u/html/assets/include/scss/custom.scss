@@ -5,11 +5,12 @@
 // Custom
 @import "custom/custom";
 
-$wineRed = #823434;
+$clrWineRed: #823434;
+$clrLabBlack: #434343;
 
 #navBar  {
 	* {
-		color: $wineRed;
+		color: $clrLabBlack;
 	}
 }
 
@@ -18,4 +19,13 @@ $wineRed = #823434;
 	height: 0;
 	padding-bottom: 56.5%;
 	max-width: 100%;
+}
+
+.bel-hero-top-one {
+	height: 86px;
+	
+}
+
+.bel-hero-top-two {
+
 }

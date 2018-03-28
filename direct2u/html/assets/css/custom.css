@@ -1,4 +1,15 @@
 /* Add here all your css styles (customizations) */
 #navBar * {
-  color: #823434;
+  color: #434343;
+}
+
+.iframe-vid-block {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.5%;
+  max-width: 100%;
+}
+
+.bel-hero-top-one {
+  height: 86px;
 }
