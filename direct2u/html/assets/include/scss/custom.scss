@@ -1,7 +1,6 @@
 //
 // Custom Styles
 //
-
 // Custom
 @import "custom/custom";
 
@@ -13,7 +12,7 @@ $clrBelBlack: #333333;
 $clrBelGrey: #e6e5e5;
 $clrFont: #434343;
 
-#navBar  {
+#navBar {
 	* {
 		color: $clrLabBlack;
 	}
@@ -36,6 +35,11 @@ $clrFont: #434343;
 	}
 }
 
+.bel-mlr-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .bel-attention {
 	height: 136px;
 	background-color: $clrBelGrey;
@@ -44,6 +48,12 @@ $clrFont: #434343;
 	h3.text-center {
 		font-weight: lighter;
 		color: $clrBelBlack;
+	}
+	
+	@media screen and (max-width: 600px) {
+		h3 {
+			font-size: 14px;
+		}
 	}
 }
 
