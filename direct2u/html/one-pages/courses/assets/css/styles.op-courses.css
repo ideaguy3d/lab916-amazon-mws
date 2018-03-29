@@ -3016,7 +3016,7 @@ body[class*="u-body--header-side"].u-body--header-side-opened .u-header__overlay
 }
 
 .u-btn-primary:hover, .u-btn-primary:focus, .u-btn-primary.active {
-    color: #fff;
+    color: #eb3436;
 }
 
 .u-btn-primary.g-btn-hover-reset:hover, .u-btn-primary.g-btn-hover-reset.active {
