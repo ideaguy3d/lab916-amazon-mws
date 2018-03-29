@@ -33346,6 +33346,7 @@ pre[class*="language-"] .toolbar-item a {
 ------------------------------------*/
 .g-pos-rel {
     position: relative !important;
+    cursor: -webkit-grab;
 }
 
 .g-pos-abs {
@@ -35329,7 +35330,8 @@ pre[class*="language-"] .toolbar-item a {
 }
 
 .g-color-white-opacity-0_8 {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 700;
 }
 
 .g-color-white-opacity-0_8--child * {
