@@ -62,16 +62,14 @@ gulp.task('sass-dt', function() {
     .pipe(gulp.dest('./html/unify-main/misc/dark-theme/assets/css/'))
 });
 
-//
+//----------
 // Watch
-//
-
+//----------
 gulp.task('watch', function() {
   gulp.watch('./html/assets/include/scss/**/*.scss', ['sass']);
 });
 
-//
+//----------
 // Default
-//
-
+//----------
 gulp.task('default', ['watch', 'sass']);
