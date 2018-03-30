@@ -26969,7 +26969,7 @@ img.u-block-hover__main--magnifier-top-left {
     left: 0;
     bottom: 100%;
     width: 100%;
-    margin-bottom: 4.64286rem;
+    margin-bottom: 2.4rem;
     -webkit-transform: translate3d(0, 70px, 0);
     transform: translate3d(0, 70px, 0);
 }
@@ -52768,6 +52768,11 @@ h6, .h6 {
 
 .g-parent:hover .g-bg-primary-opacity-0_9--parent-hover {
     background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.g-parent:hover .g-pos-rel .info-v5-3__info-title {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    padding: 12px;
 }
 
 /* Border */
